@@ -1,0 +1,767 @@
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio</title>
+    <link rel="stylesheet" href="styles.css">
+    <header>
+        <div class="menu-container">
+            <ul id="categorias">
+                <li>
+                    <a href="http://127.0.0.1:3000/cardapio.html">
+                        <div class="imagem"><img src="favicon/estrela.png" alt="" style="width: 40px;"></div>
+                        <span>Mais Vendidos</span>
+                    </a>
+                </li>
+               
+                <li>
+                    <a href="http://127.0.0.1:3000/cardapio.htm">
+                        <div class="imagem"><img src="favicon/android-chrome-192x192.png" alt="" style="width: 40px;"></div>
+                        <span>Lanches</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://127.0.0.1:3000/cardapio.htm">
+                        <div class="imagem"><img src="favicon/Ícone-Refrigerante-PNG-300x300.png" alt="" style="width: 40px;"></div>
+                        <span>Refrigerantes</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://127.0.0.1:3000/cardapio.htm">
+                        <div class="imagem"><img src="favicon/doces.png" alt="" style="width: 40px;"></div>
+                        <span>Doces</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://127.0.0.1:3000/cardapio.htm">
+                        <div class="imagem"><img src="favicon/cerveja.webp" alt="" style="width: 40px;"></div>
+                        <span>Cerveja</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://127.0.0.1:3000/cardapio.htm">
+                        <div class="imagem_combo"><img src="favicon/porcoes.webp" alt="" style="width: 40px;"></div>
+                        <span class="imagem2" >Porções</span>
+                    </a>
+                </li>
+            
+            </ul>
+        </div>
+    </header>
+    
+
+
+</head>
+<body>
+    <div class="container">
+        <h1> MAIS VENDIDOS</h1>
+        <div class="menu">
+            <div class="menu-item">
+                <img src="x-salada-png-8.png" alt="X-SALADA" style="width: 200px;">
+                <div class="description">
+                    <h2>X-Salada Artesanal</h2>
+                    <p>Pão brioche selado na brasa + Blend 150gr suculento + Queijo cheddar+ Alface, tomate e cebola roxa +molhos( maionese, catchup e mostarda)</p>
+                    <div class="div_Valor"> <p  class="valor" style="color: white;">R$ 25,00 ou 25 pts</p> </div>
+                    <button onclick="addToCart('X-SALADA', 25)">Adicionar</button>
+                </div>
+            </div>
+          
+            <div class="menu-item">
+                <img src="x-bacon.jpg" alt="X-Bacon" style="width: 200px;">
+                <div class="description">
+                    <h2>X-Bacon Artesanal</h2>
+                    <p>Pão Brioche, Hamb de 150G de acém suculento, Mussarela, Cheddar, Bacon e Molho Especial da casa</p>
+                   <div class="div_Valor" > <p class="valor" style="color: white;">R$ 27,00 ou 27 pts</p> </div>
+                    <button onclick="addToCart('X-Bacon Suculento', 27)">Adicionar</button>
+                </div>
+            </div>
+          
+            <div class="menu-item">
+            <img src="x-burguer novo.jfif" alt="X-BURGUER" style="width: 250px">
+                <div class="description">
+                    <h2>X-Burguer Artesanal</h2>
+                    <p>Pão Brioche, hambúrguer de 150G de acém suculento + Mussarela + (salada opcional do cliente )e molho Especial da casa + (  maionese, catchup e mostarda ) opcional</p>
+                <div class="div_Valor"> <p class="valor" style="color: white;" >R$ 20,00 ou 20 pts</p> </div>
+                    <button onclick="addToCart('X-BURGUER', 20)">Adicionar</button>
+                </div>
+            </div>
+
+
+          
+            <div class="menu-item">
+                <img src="x-frango.jfif" alt="X-FRANGO" style="width: 200px;">
+                <div class="description">
+                    <h2>X-Frango Artesanal</h2>
+                    <p>Pão brioche, hambúrguer bem suculento de frango empanado + mussarela + cheddar + alface + tomate + cebola roxa + molho da casa + (  maionese, catchup e mostarda ) opcional do cliente.</p>
+                <div class="div_Valor"> <p class="valor" style="color: white;">R$ 30,00 ou 30 pts</p></div>
+                    <button onclick="addToCart('X-FRANGO Suculento', 30)">Adicionar</button>
+                </div>
+            </div>
+
+
+
+            <div class="menu-item">
+                <img src="x-bancon duplo.png" alt="Item 8" style="width: 200px">
+                <div class="description">
+                    <h2>X-Bacon Duplo</h2>
+                    <p>Pão Brioche + 2 hambúrguer de 150G acém + 2 fatias de queijo cheddar + 2 camadas de bacon crocante + alface + tomate + Cebola caramelizada (opcional) + Molhos variados.</p>
+                 <div class="div_Valor"><p class="valor" style="color: white;">R$ 35,00 ou 35 pts</p> </div>
+                    <button onclick="addToCart('X-BACON DUPLO', 35)">Adicionar</button>
+                </div>
+            </div>
+          
+       
+
+
+          
+            <div class="menu-item">
+                <img src="xtudo novo.jpg" alt="X-TUDO" style="width: 190px">
+                <div class="description">
+                    <h2>X-Tudo Artesanal</h2>
+                    <p>Pão de hamb + 2 hambúrguer 200g + presunto + mussarela + ovo + catupiry empanado + alface + tomate + cebola roxa + muito bacon + molho da casa</p>
+                    <div class="div_valor"> <p class="valor" style="color: white;">R$ 45,00 ou 45 pts</p> </div>
+                    <button onclick="addToCart('X-TUDO', 45)">Adicionar</button>
+                </div>
+            </div>
+       
+
+
+     
+            <div class="menu-item">
+                <img src="x-egg.jpg" alt="Item 8" style="width: 200px">
+                <div class="description">
+                    <h2>X-Egg Artesanal</h2>
+                    <p>Pão Brioche, hambúrguer de 150G acém, 2 Ovos, Mussarela , Cheddar, Alface, Tomate, Cebola Roxa</p>
+                 <div class="div_Valor"><p class="valor" style="color: white;">R$ 30,00 ou 30 pts</p> </div>
+                    <button onclick="addToCart('X-EGG ARTESANAL', 30)">Adicionar</button>
+                </div>
+            </div>
+     
+
+
+            <div class="menu-item">
+                <img src="x-salada duplo.jfif" alt=" X-SALADA DUPLO" style="width: 200px">
+                <div class="description">
+                    <h2>X-Salada Duplo</h2>
+                    <p>Pão brioche selado na brasa + 2 Hamb 150gr de acém suculento + Queijo cheddar+ Alface, tomate e cebola roxa +molhos( maionese, catchup e mostarda)  + Pickles (opcional)
+                    </p>
+                <div class="div_Valor"> <p class="valor" style="color: white;">R$ 35,00 ou 35 pts</p> </div>
+                    <button onclick="addToCart('X-SALADA DUPLO', 35)">Adicionar</button>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+            <div class="container">
+                <h1>TODOS OS LANCHES</h1>
+                <div class="menu">
+                    <div class="menu-item">
+                        <img src="x-salada-png-8.png" alt="X-SALADA" style="width: 200px;">
+                        <div class="description">
+                            <h2>X-Salada Artesanal</h2>
+                            <p>Pão brioche selado na brasa + Blend 150gr suculento + Queijo cheddar+ Alface, tomate e cebola roxa +molhos( maionese, catchup e mostarda)</p>
+                            <div class="div_Valor"> <p  class="valor" style="color: white;">R$ 25,00 ou 25 pts</p> </div>
+                            <button onclick="addToCart('X-SALADA', 25)">Adicionar</button>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="menu-item">
+                        <img src="x-bacon.jpg" alt="X-Bacon" style="width: 200px;">
+                        <div class="description">
+                            <h2>X-Bacon Artesanal</h2>
+                            <p>Pão Brioche, Hamb de 150G de acém suculento, Mussarela, Cheddar, Bacon e Molho Especial da casa</p>
+                           <div class="div_Valor" > <p class="valor" style="color: white;">R$ 27,00 ou 27 pts</p> </div>
+                            <button onclick="addToCart('X-Bacon Suculento', 27)">Adicionar</button>
+                        </div>
+                    </div>
+                  
+                    <div class="menu-item">
+                    <img src="x-burguer novo.jfif" alt="X-BURGUER" style="width: 250px">
+                        <div class="description">
+                            <h2>X-Burguer Artesanal</h2>
+                            <p>Pão Brioche, hambúrguer de 150G de acém suculento + Mussarela + (salada opcional do cliente )e molho Especial da casa + (  maionese, catchup e mostarda ) opcional</p>
+                        <div class="div_Valor"> <p class="valor" style="color: white;" >R$ 20,00 ou 20 pts</p> </div>
+                            <button onclick="addToCart('X-BURGUER', 20)">Adicionar</button>
+                        </div>
+                    </div>
+        
+        
+                  
+                    <div class="menu-item">
+                        <img src="x-frango.jfif" alt="X-FRANGO" style="width: 200px;">
+                        <div class="description">
+                            <h2>X-Frango Artesanal</h2>
+                            <p>Pão brioche, hambúrguer bem suculento de frango empanado + mussarela + cheddar + alface + tomate + cebola roxa + molho da casa + (  maionese, catchup e mostarda ) opcional do cliente.</p>
+                        <div class="div_Valor"> <p class="valor" style="color: white;">R$ 30,00 ou 30 pts</p></div>
+                            <button onclick="addToCart('X-FRANGO Suculento', 30)">Adicionar</button>
+                        </div>
+                    </div>
+        
+        
+        
+                    <div class="menu-item">
+                        <img src="x-bancon duplo.png" alt="Item 8" style="width: 200px">
+                        <div class="description">
+                            <h2>X-Bacon Duplo</h2>
+                            <p>Pão Brioche, 2 hambúrguer de 150G acém, 2 fatias de queijo cheddar , 2 camadas de bacon crocante,alface ,tomate,Cebola (opcional),Molhos variados.</p>
+                         <div class="div_Valor"><p class="valor" style="color: white;">R$ 35,00 ou 35 pts</p> </div>
+                            <button onclick="addToCart('X-BACON DUPLO', 35)">Adicionar</button>
+                        </div>
+                    </div>
+                  
+               
+        
+        
+                  
+                    <div class="menu-item">
+                        <img src="xtudo novo.jpg" alt="X-TUDO" style="width: 190px">
+                        <div class="description">
+                            <h2>X-Tudo Artesanal</h2>
+                            <p>Pão de hamb + 2 hambúrguer 200g + presunto + mussarela + ovo + catupiry empanado + alface + tomate + cebola roxa + muito bacon + molho da casa</p>
+                            <div class="div_valor"> <p class="valor" style="color: white;">R$ 45,00 ou 45 pts</p> </div>
+                            <button onclick="addToCart('X-TUDO', 45)">Adicionar</button>
+                        </div>
+                    </div>
+               
+        
+        
+             
+                    <div class="menu-item">
+                        <img src="x-egg.jpg" alt="Item 8" style="width: 200px">
+                        <div class="description">
+                            <h2>X-Egg Artesanal</h2>
+                            <p>Pão Brioche, hambúrguer de 150G acém, 2 Ovos, Mussarela , Cheddar, Alface, Tomate, Cebola Roxa</p>
+                         <div class="div_Valor"><p class="valor" style="color: white;">R$ 30,00 ou 30 pts</p> </div>
+                            <button onclick="addToCart('X-EGG ARTESANAL', 30)">Adicionar</button>
+                        </div>
+                    </div>
+             
+        
+        
+                    <div class="menu-item">
+                        <img src="x-salada duplo.jfif" alt=" X-SALADA DUPLO" style="width: 200px">
+                        <div class="description">
+                            <h2>X-Salada Duplo</h2>
+                            <p>Pão brioche selado na brasa + 2 Hamb 150gr de acém suculento + Queijo cheddar+ Alface, tomate e cebola roxa +molhos( maionese, catchup e mostarda)  + Pickles (opcional)
+                            </p>
+                        <div class="div_Valor"> <p class="valor" style="color: white;">R$ 35,00 ou 35 pts</p> </div>
+                            <button onclick="addToCart('X-SALADA DUPLO', 35)">Adicionar</button>
+                        </div>
+                    </div>
+
+
+
+                    <div class="menu-item">
+                        <img src="xpicanha.jpg" alt=" X- PICANHA" style="width: 200px">
+                        <div class="description">
+                            <h2>X-Picanha</h2>
+                            <p>Pão de brioche com gergilim + hamburguer de picanha 180gr + tomates + queijo mussarela+ salada + calabresa + molhos ,maionese da casa, catchup e mostarda
+                            </p>
+                        <div class="div_Valor"> <p class="valor" style="color: white;">R$ 38,00 ou 38 pts</p> </div>
+                            <button onclick="addToCart('X-PICANHA', 38)">Adicionar</button>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="menu-item">
+                        <img src="X PICANHA DUPLO.webp" alt=" X- PICANHA" style="width: 200px">
+                        <div class="description">
+                            <h2>X-Picanha Duplo</h2>
+                            <p>Pão de brioche com gergilim + 2 hamburguer de picanha 180gr + tomates + queijo mussarela+ salada + calabresa + molhos ,maionese da casa, catchup e mostarda
+                            </p>
+                        <div class="div_Valor"> <p class="valor" style="color: white;">R$ 42,00 ou 42 pts</p> </div>
+                            <button onclick="addToCart('X-PICANHA DUPLO', 42)">Adicionar</button>
+                        </div>
+                    </div>
+        
+        
+        
+        
+        
+
+
+                    <div class="menu-item">
+                        <img src="x monstro.png" alt=" X- MONSTRO" style="width: 260px">
+                        <div class="description">
+                            <h2>X-Monstro</h2>
+                            <p>Pão de Hamb com gergilim + 4 hamburguer de picanha 100gr + tomates + queijo mussarela+ muito queijo cheddar + salada + batatas fritas + molhos ,maionese da casa, catchup e mostarda
+                            </p>
+                        <div class="div_Valor"> <p class="valor" style="color: white;">R$ 49,00 ou 49 pts</p> </div>
+                            <button onclick="addToCart('X-MONSTRO', 47)">Adicionar</button>
+                        </div>
+                    </div>
+
+    
+
+
+                         <!-- REFRIGERANTE -->
+
+
+
+
+
+
+
+    
+                    <div class="container">
+                        <h1>REFRIGERANTES</h1>
+                        <div class="menu">
+                            <div class="menu-item">
+                                <img src="coca lata.jfif" alt="COCA-COLA LATA" style="width: 200px;">
+                                <div class="description">
+                                    <h2> Coca-Cola Lata</h2>
+                                    <div class="div_Valor-refri"> <p  class="valor" style="color: white;">R$ 7,00 ou 7 pts</p> </div>
+                                    <button onclick="addToCart('COCA-COLA LATA', 7)">Adicionar</button>
+                                </div>
+                            </div>
+                
+
+                
+                
+                            <div class="menu-item">
+                                <img src="coca-zero lata.jfif" alt="COCA-ZERO LATA" style="width: 200px;">
+                                <div class="description">
+                                    <h2> Coca-Cola Zero Lata</h2>
+                                    <div class="div_Valor-refri"> <p  class="valor" style="color: white;">R$ 7,00 ou 7 pts</p> </div>
+                                    <button onclick="addToCart('COCA-ZERO LATA', 7)">Adicionar</button>
+                                </div>
+                            </div>
+
+
+
+                            <div class="menu-item">
+                                <img src="guarana lata.jpg" alt="GUARANA LATA" style="width: 200px;">
+                                <div class="description">
+                                    <h2>Guaraná Lata</h2>
+                                    <div class="div_Valor-refri"> <p  class="valor" style="color: white;">R$ 7,00 ou 7 pts</p> </div>
+                                    <button onclick="addToCart('GUARANÁ LATA', 7)">Adicionar</button>
+                                </div>
+                            </div>
+
+
+
+                            <div class="menu-item">
+                                <img src="guarana lata zero.avif" alt="GUARÁNA LATA ZERO " style="width: 200px;">
+                                <div class="description">
+                                    <h2>Guaraná Lata Zero</h2>
+                                    <div class="div_Valor-refri"> <p  class="valor" style="color: white;">R$ 7,00 ou 7 pts</p> </div>
+                                    <button onclick="addToCart('GUARANÁ LATA ZERO ', 7)">Adicionar</button>
+                                </div>
+                            </div>
+
+
+
+                            <div class="menu-item">
+                                <img src="fanta lata.jfif" alt="FANTA" style="width: 260px;">
+                                <div class="description">
+                                    <h2>Fanta Lata </h2>
+                                    <div class="div_Valor-refri"> <p  class="valor" style="color: white;">R$ 7,00 ou 7 pts</p> </div>
+                                    <button onclick="addToCart('FANTA LARANJA LATA', 7)">Adicionar</button>
+                                </div>
+                            </div>
+
+
+                            <div class="menu-item">
+                                <img src="Refrigerante_Fanta_Uva_350Ml-thumbnail-1080x1080-70.jpg" alt="FANTA UVA" style="width: 200px;">
+                                <div class="description">
+                                    <h2>Fanta Uva</h2>
+                                    <div class="div_Valor-refri"> <p  class="valor" style="color: white;">R$ 7,00 ou 7 pts</p> </div>
+                                    <button onclick="addToCart('FANTA UVA LATA', 7)">Adicionar</button>
+                                </div>
+                            </div>
+
+
+                            <div class="menu-item">
+                                <img src="coca 2 litros.jpg" alt="COCA-COLA 2 LITROS" style="width: 200px;">
+                                <div class="description">
+                                    <h2>Coca-Cola 2 Litros</h2>
+                                    <div class="div_Valor-refri"> <p  class="valor" style="color: white;">R$ 14,00 ou 14 pts</p> </div>
+                                    <button onclick="addToCart('COCA-COLA 2 LITROS', 14)">Adicionar</button>
+                                </div>
+                            </div>
+
+
+
+                            <div class="menu-item">
+                                <img src="coca 2 litros zero.jpg" alt="COCA-COLA 2 LITROS ZERO" style="width: 200px;">
+                                <div class="description">
+                                    <h2>Coca-Cola 2 Litros Zero</h2>
+                                    <div class="div_Valor-refri"> <p  class="valor" style="color: white;">R$ 14,00 ou 14 pts</p> </div>
+                                    <button onclick="addToCart('COCA-COLA 2 LITROS ZERO', 14)">Adicionar</button>
+                                </div>
+                            </div>
+
+
+                            <div class="menu-item">
+                                <img src="guarana 2 litros.webp" alt="GUARANÁ 2 LITROS " style="width: 200px;">
+                                <div class="description">
+                                    <h2>Guarána 2 Litros </h2>
+                                    <div class="div_Valor-refri"> <p  class="valor" style="color: white;">R$ 14,00 ou 14 pts</p> </div>
+                                    <button onclick="addToCart('GUARANÁ 2 LITROS', 14)">Adicionar</button>
+                                </div>
+                            </div>
+
+
+
+
+                            
+                            <div class="menu-item">
+                                <img src="GUARÁNA 2 LITROS zero.avif" alt="GUARANÁ 2 LITROS ZERO " style="width: 200px;">
+                                <div class="description">
+                                    <h2>Guaraná 2 Litros Zero </h2>
+                                    <div class="div_Valor-refri"> <p  class="valor" style="color: white;">R$ 14,00 ou 14 pts</p> </div>
+                                    <button onclick="addToCart('GUARANÁ 2 LITROS ZERO', 14)">Adicionar</button>
+                                </div>
+                            </div>
+
+
+
+
+
+
+                            <div class="menu-item">
+                                <img src="fanta 2 litros laranja.jpg" alt="FANTA 2 LITROS LARANJA " style="width: 200px;">
+                                <div class="description">
+                                    <h2>Fanta 2 Litros Laranja </h2>
+                                    <div class="div_Valor-refri"> <p  class="valor" style="color: white;">R$ 14,00 ou 14 pts</p> </div>
+                                    <button onclick="addToCart('FANTA 2 LITROS LARANJA', 14)">Adicionar</button>
+                                </div>
+                            </div>
+
+
+                            <div class="menu-item">
+                                <img src="fanta 2 itros uva.jpg" alt="FANTA 2 LITROS UVA " style="width: 200px;">
+                                <div class="description">
+                                    <h2>Fanta 2 Litros Uva </h2>
+                                    <div class="div_Valor-refri"> <p  class="valor" style="color: white;">R$ 14,00 ou 14 pts</p> </div>
+                                    <button onclick="addToCart('FANTA 2 LITROS UVA', 14)">Adicionar</button>
+                                </div>
+                            </div>
+
+
+
+
+
+
+
+                            <div class="container">
+                        <h1>DOCES</h1>
+                        <div class="menu">
+                            <div class="menu-item">
+                                <img src="bolo-de-pote-de-oreo.webp" alt="BOLO DE POTE OREO" style="width: 220px;">
+                                <div class="description">
+                                    <h2> Bolo De Pote Oreo</h2>
+                                    <div class="div_Valor-refri"> <p  class="valor" style="color: white;">R$ 13,00 ou 13 pts</p> </div>
+                                    <button onclick="addToCart('BOLO DE POTE OREO', 13)">Adicionar</button>
+                                </div>
+                            </div>
+
+
+                            <div class="menu-item">
+                                <img src="bolo de pote choco com leite ninho.jpg" alt="BOLO DE POTE DE CHOCOLATE COM LEITE NINHO" style="width: 200px;">
+                                <div class="description">
+                                    <h2> Bolo De Pote Chocolate Com Leite Ninho</h2>
+                                    <div class="div_Valor-refri"> <p  class="valor" style="color: white;">R$ 13,00 ou 13 pts</p> </div>
+                                    <button onclick="addToCart('BOLO DE POTE DE CHOCOLATE COM LEITE NINHO', 13)">Adicionar</button>
+                                </div>
+                            </div>
+
+
+                            <div class="menu-item">
+                                <img src="bolo brigadeiro.webp" alt="BOLO DE POTE DE BRIGADEIRO" style="width: 220px;">
+                                <div class="description">
+                                    <h2> Bolo De Pote Brigadeiro</h2>
+                                    <div class="div_Valor-refri"> <p  class="valor" style="color: white;">R$ 13,00 ou 13 pts</p> </div>
+                                    <button onclick="addToCart('BOLO DE POTE DE BRIGADEIRO', 13)">Adicionar</button>
+                                </div>
+                            </div>
+
+
+
+
+
+
+
+
+                            <div class="container">
+                                <h1>CERVEJAS LONG NECK</h1>
+                                <div class="menu">
+                                    <div class="menu-item">
+                                        <img src="budwaizer long.jfif" alt="BUDWAIZER LONG NECK" style="width: 220px;">
+                                        <div class="description">
+                                            <h2> Budwaizer Long Neck</h2>
+                                            <div class="div_Valor-refri"> <p  class="valor" style="color: white;">R$ 13,00 ou 13 pts</p> </div>
+                                            <button onclick="addToCart('BUDWAIZER LONG NECK', 15)">Adicionar</button>
+                                        </div>
+                                    </div>
+
+
+
+
+                                    <div class="menu-item">
+                                        <img src="heineiker.webp" alt="HEINEIKER LONG NECK" style="width: 220px;">
+                                        <div class="description">
+                                            <h2> Heineiker Long Neck</h2>
+                                            <div class="div_Valor-refri"> <p  class="valor" style="color: white;">R$ 13,00 ou 13 pts</p> </div>
+                                            <button onclick="addToCart('HEINEIKER LONG NECK', 15)">Adicionar</button>
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="menu-item">
+                                        <img src="heineker zero.webp" alt="HEINEIKER LONG NECK ZERO" style="width: 220px;">
+                                        <div class="description">
+                                            <h2> Heineiker Zero LN</h2>
+                                            <div class="div_Valor-refri"> <p  class="valor" style="color: white;">R$ 15,00 ou 15 pts</p> </div>
+                                            <button onclick="addToCart('HEINEIKER LONG NECK ZERO', 15)">Adicionar</button>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="menu-item">
+                                        <img src="1077-cerveja-stella-artois-long-neck-275ml.png" alt="STELLA LONG NECK " style="width: 220px;">
+                                        <div class="description">
+                                            <h2> Stella-Artois Long Neck</h2>
+                                            <div class="div_Valor-refri"> <p  class="valor" style="color: white;">R$ 13,00 ou 13 pts</p> </div>
+                                            <button onclick="addToCart('STELLA LONG NECK', 13)">Adicionar</button>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="menu-item">
+                                        <img src="sem glutem stea.webp" alt="STELLA LONG NECK SEM GLÚTEN " style="width: 160px;">
+                                        <div class="description">
+                                            <h2> Stella Sem Glúten LN</h2>
+                                            <div class="div_Valor-refri"> <p  class="valor" style="color: white;">R$ 12,00 ou 12 pts</p> </div>
+                                            <button onclick="addToCart('STELLA LONG NECK SEM GLÚTEN', 12)">Adicionar</button>
+                                        </div>
+                                    </div>
+
+
+                    
+
+                                    <div class="menu-item">
+                                        <img src="malzibier.webp" alt="BRAHMA LONG NECK " style="width: 210px;">
+                                        <div class="description">
+                                            <h2> Brahma Long Neck </h2>
+                                            <div class="div_Valor-refri"> <p  class="valor" style="color: white;">R$ 10,00 ou 10 pts</p> </div>
+                                            <button onclick="addToCart('BRAHMA LONG NECK', 10)">Adicionar</button>
+                                        </div>
+                                    </div>
+
+
+                    
+
+
+
+
+
+
+
+                                    
+                            <div class="container">
+                                <h1>PORÇÕES</h1>
+                                <div class="menu">
+                                    <div class="menu-item">
+                                        <img src="porcao batata.png" alt="PORÇÃO DE FRITAS" style="width: 180px;">
+                                        <div class="description">
+                                            <h2> Porção De Fritas Grande</h2>
+                                            <p>porção de batatas fritas + molhos especial da casa (catchup + maionese + mostarda) opcional do cliente.</p>
+                                            <div class="div_Valor-refri"> <p  class="valor" style="color: white;">R$ 17,00 ou 17 pts</p> </div>
+                                            <button onclick="addToCart('PORÇÃO DE FRITAS', 17)">Adicionar</button>
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="menu-item">
+                                        <img src="315-3156461_batata-frita-palito-com-cheddar-e-bacon-933.png" alt="PORÇÃO DE FRITAS C/ CHEDDAR E BACON" style="width: 190px;">
+                                        <div class="description">
+                                            <h2> Porção De Fritas C/ Cheddar e Bacon Pequena</h2>
+                                            <P>Porção de batatas fritas com cheddar e pedaços de bacon crocante + molhos</P>
+                                            <div class="div_Valor-refri"> <p  class="valor" style="color: white;">R$ 20,00 ou 20 pts</p> </div>
+                                            <button onclick="addToCart('PORÇÃO DE FRITAS C/ CHEDDAR E BACON PEQUENA', 25)">Adicionar</button>
+                                        </div>
+                                    </div>
+
+
+
+
+
+                                    <div class="menu-item">
+                                        <img src="315-3156461_batata-frita-palito-com-cheddar-e-bacon-933.png" alt="PORÇÃO DE FRITAS C/ CHEDDAR E BACON" style="width: 190px;">
+                                        <div class="description">
+                                            <h2> Porção De Fritas C/ Cheddar e Bacon Grande</h2>
+                                            <P>Porção de batatas fritas com cheddar e pedaços de bacon crocante + molhos</P>
+                                            <div class="div_Valor-refri"> <p  class="valor" style="color: white;">R$ 25,00 ou 25 pts</p> </div>
+                                            <button onclick="addToCart('PORÇÃO DE FRITAS C/ CHEDDAR E BACON GRANDE', 25)">Adicionar</button>
+                                        </div>
+                                    </div>
+
+                                    <div class="menu-item">
+                                        <img src="187-1876316_pastel-png.png" alt="PORÇÃO DE MINI PASTEIS" style="width: 190px;">
+                                        <div class="description">
+                                            <h2> Porção De Mini Pastéis</h2>
+                                            <P>Porção de Pastéis + molhos da casa.</P>
+                                            <div class="div_Valor-refri"> <p  class="valor" style="color: white;">R$ 25,00 ou 25 pts</p> </div>
+                                            <button onclick="addToCart('PORÇÃO DE MINI PASTÉIS', 25)">Adicionar</button>
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="menu-item">
+                                        <img src="porçao de calabresa.webp.crdownload" alt="PORÇÃO DE CALABRESA" style="width: 200px;">
+                                        <div class="description">
+                                            <h2> Porção De Calabresa Acebolada</h2>
+                                            <P>Porção de calabresa acebolada + salada + molhos da casa.</P>
+                                            <div class="div_Valor-refri"> <p  class="valor" style="color: white;">R$ 30,00 ou 30 pts</p> </div>
+                                            <button onclick="addToCart('PORÇÃO DE CALABRESA', 30)">Adicionar</button>
+                                        </div>
+                                    </div>
+
+                                    <div class="menu-item">
+                                        <img src="tilapia porçoes.jpg.crdownload" alt="PORÇÃO DE TILAPIA" style="width: 200px;">
+                                        <div class="description">
+                                            <h2> Porção De Tilápia Crocante</h2>
+                                            <P>Porção de tilápia + molhos da casa.</P>
+                                            <div class="div_Valor-refri"> <p  class="valor" style="color: white;">R$ 35,00 ou 35 pts</p> </div>
+                                            <button onclick="addToCart('PORÇÃO DE TILÁPIA', 35)">Adicionar</button>
+                                        </div>
+                                    </div>
+
+                                    <div class="menu-item">
+                                        <img src="contra file.jpeg" alt="PORÇÃO DE TILAPIA" style="width: 200px;">
+                                        <div class="description">
+                                            <h2> Porção De Contra Filé</h2>
+                                            <P>Porção de contra filé + batatas + molhos da casa.</P>
+                                            <div class="div_Valor-refri"> <p  class="valor" style="color: white;">R$ 45,00 ou 45 pts</p> </div>
+                                            <button onclick="addToCart('PORÇÃO DE CONTRA FILÉ', 45)">Adicionar</button>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="menu-item">
+                                        <img src="coxinha.jfif" alt="PORÇÃO DE MINI COXINHAS" style="width: 200px;">
+                                        <div class="description">
+                                            <h2> Porção De Coxinhas</h2>
+                                            <P>Porção de mini coxinhas + molhos da casa.</P>
+                                            <div class="div_Valor-refri"> <p  class="valor" style="color: white;">R$ 30,00 ou 30 pts</p> </div>
+                                            <button onclick="addToCart('PORÇÃO DE MINI COXINHA', 30)">Adicionar</button>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="menu-item">
+                                        <img src="bolinho-de-mandioca-com-carne-e-pimenta.webp" alt="PORÇÃO DE BOLINHOS" style="width: 180px;">
+                                        <div class="description">
+                                            <h2> Porção De Bolinho</h2>
+                                            <P>Porção de mini bolinhos de mandioca com carne seca + cream cheese + molhos da casa.</P>
+                                            <div class="div_Valor-refri"> <p  class="valor" style="color: white;">R$ 37,00 ou 37 pts</p> </div>
+                                            <button onclick="addToCart('PORÇÃO DE BOLINHOS C/ CARNE', 37)">Adicionar</button>
+                                        </div>
+                                    </div>
+
+
+
+
+
+
+        </div>
+    </div>
+
+
+
+    
+
+    
+
+
+    <div class="cart-container">
+        <div class="cart">
+            <h2>Meus Pedidos</h2>
+            <ul id="cart-items"></ul>
+            <p>Total: R$ <span id="total">0.00</span></p>
+            <div>
+                <label for="observations">Observações:</label>
+                <textarea id="observations" rows="3" cols="30" placeholder="Adicione alguma observação..."></textarea>
+            </div>
+            <button class="centralized-button" onclick="checkout()">Próximo passo</button>
+        </div>
+    </div>
+    <div class="checkout-summary-container">
+        <div id="checkout" class="checkout-container" style="display:none;">
+            <h2>Confirmar Pedido</h2>
+            <form id="checkout-form">
+                <label for="payment-method">Método de Pagamento:</label>
+                <select id="payment-method" onchange="checkPaymentMethod()">
+                    <option value="debito">Débito</option>
+                    <option value="credito">Crédito</option>
+                    <option value="pix">Pix</option>
+                    <option value="dinheiro">Dinheiro</option>
+                </select>
+
+                <div id="pix-message" style="display:none; color: rgb(202, 18, 12); margin-top: 10px;">
+                    A chave Pix é: <span id="XxX-XxX-XxX"></span>
+                </div>
+
+                <div id="cash-options" style="display:none;">
+                    <label for="change-needed">Precisa de troco?</label>
+                    <input type="checkbox" id="change-needed" onchange="toggleChangeInput()">
+                    <div id="change-amount" style="display:none;">
+                        <label for="cash-amount">Valor da Nota:</label>
+                        <input type="number" id="cash-amount" oninput="calculateChange()">
+                    </div>
+                    <p>Troco: R$ <span id="change">0.00</span></p>
+                </div>
+
+                <label for="delivery-option">Retirada ou Entrega:</label>
+                <select id="delivery-option" onchange="checkDeliveryOption()">
+                    <option value="retirada">Retirada</option>
+                    <option value="entrega">Entrega</option>
+                </select>
+
+                <div id="delivery-info" style="display:none;">
+                    <label for="address">Endereço:</label>
+                    <input type="text" id="address">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name">
+                    <p>Não se esqueça da taxa, entre R$5,00 e R$25,00</p>
+                </div>
+
+                <button class="centralized-button" type="button" onclick="confirmOrder()">Confirmar Pedido</button>
+            </form>
+        </div>
+        <div id="order-summary" class="order-summary-container" style="display:none;">
+            <h2>Resumo do Pedido</h2>
+            <pre id="order-details"></pre>
+            <button class="copy-button" onclick="copyOrderDetails()">Copiar Resumo</button>
+        </div>
+    </div>
+
+   
+
+</body>
+     <script src="script.js"></script>
+    <footer>
+       
+        <a href="https://www.instagram.com/arigataisushi/" target="_blank" rel="noopener noreferrer"><img src="icon/instagram.png"></img></a>
+      <a href="https://www.facebook.com/yakisobaexpresss/" target="blank" rel="noopener noreferrer"><img src="icon/facebook.png" alt=""></a>
+      <a href="https://wa.me/5511943041258" target="_blank" rel="noopener noreferrer"><img src="icon/whatsapp.png" alt=""></img></a>
+        <a href="https://maps.app.goo.gl/uEG6xYebsVKKYqeg7" target="_blank" rel="noopener noreferrer"><img src="icon/ferramenta.png" alt=""></a>
+       
+    </footer>
+    
+    
+    </html>

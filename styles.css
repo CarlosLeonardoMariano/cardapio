@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: Montserrat;font-weight:400;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-container {
+    width: 100%;
+    overflow-x: auto;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional for better visual */
+}
+
+#categorias {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+#categorias li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 120px;
+    margin: 0 10px;
+    background-color: #fff;
+}
+
+#categorias li a {
+    color: #666;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.imagem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px; /* Adjust spacing between image and text */
+}
+
+.imagem2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px; /* Adjust spacing between image and text */
+}
+
+.imagem_combo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px; /* Adjust spacing between image and text */
+}
+
+/* Optional: Adding hover effect */
+#categorias li a:hover {
+    border-radius: 5px;
+    color: red;
+    transform: scale(1.1);
+    transition: all 0.2s ease;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+
+h1 {
+    text-align: center;
+    color: #333333;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.container {
+    padding: 20px;
+}
+
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Espaço entre os itens */
+    justify-content: space-between; /* Distribui os itens ao longo da linha com espaço entre eles */
+}
+
+
+
+
+
+
+
+
+
+
+.menu-item {
+    flex: 1 1 calc(33.333% - 20px); /* Três itens por linha, ajustando para o espaçamento */
+    box-sizing: border-box; /* Inclui padding e border no cálculo da largura */
+    margin-bottom: 20px; /* Espaço abaixo de cada item */
+    text-align: center; /* Centraliza o texto */
+        background: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        margin: 3px;
+        width: calc(33% - 40px);
+        padding: 15px;
+        text-align: center;
+        transition: all 0.4s ease;
+    
+}
+
+
+
+
+
+.menu-item img {
+    width: 100%; /* Faz a imagem ocupar toda a largura do item */
+    max-width: 90%; /* Define um tamanho máximo para a imagem */
+    border-radius: 10px;
+
+}
+
+.description {
+        padding: 10px 0;
+    }
+
+
+.div_Valor, .div_valor {
+    margin: 10px 0;
+    margin-left: 45%
+
+}
+
+@media (max-width: 768px) {
+    .menu-item {
+        flex: 1 1 100%; /* Em telas menores, os itens ocupam toda a largura disponível */
+    }
+}
+
+
+
+
+.menu-item:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    transform: translate(1rem);
+}
+
+
+
+.valor{
+    background-color: #DA3B3B;
+    
+    color: #FFFFFF;
+     padding: 8px;
+    width: 180px;
+    text-align: justify;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bolder;
+
+}
+
+
+
+
+
+.description h2 {
+    margin: 10px 0;
+    font-size: 24px;
+    color: #333333;
+    font-family: "Montserrat", sans-serif;;
+
+}
+
+.description p {
+    margin: 5px 0;
+    margin-bottom: 10px;
+    color: #666666;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.cart-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 50px auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+.cart {
+    background: #ffffff;
+    color: #333333;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px 0;
+    transition: all 0.3s ease;
+}
+
+.cart:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 5px 0;
+}
+
+.centralized-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.centralized-button:hover {
+    background-color: #0056b3;
+}
+
+.checkout-summary-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+.checkout-container, .order-summary-container {
+    background: #ffffff;
+    color: #333333;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: left;
+    margin: 20px 0;
+    transition: all 0.3s ease;
+}
+
+.checkout-container:hover, .order-summary-container:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.checkout-container h2, .order-summary-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.order-summary-container pre {
+    background: #f5f5f5;
+    padding: 10px;
+    border-radius: 5px;
+    white-space: pre-wrap;
+    color: #333333;
+}
+
+.copy-button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.copy-button:hover {
+    background-color: #0056b3;
+}
+
+footer img {
+    width: 1cm;
+    margin: 25px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.valor{font-weight: bolder;
+}
