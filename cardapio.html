@@ -5,6 +5,43 @@
     <title>Cardápio</title>
     <link rel="stylesheet" href="styles.css">
     <header>
+        <h1 id="h1header"> O PONTO DO LANCHE</h1>
+       <div class="text-header">
+        <span class="label">Tempo de Entrega: </span>
+        <span class="delivery-time" onclick="toggleInfo()">40min</span>
+        <span class="infoDelivery" onclick="toggleInfo()">Informações</span>
+    </div>
+    <div class="text-header2">
+        <span class="relogio" style="color: #008000;font-weight: bolder; cursor: pointer;" onclick="infoRelogio()"> 🕗 Aberto </span>
+        <span class="pontos"> 💲 Pontuação da Lanchonete</span>
+    </div>
+
+
+    <div id="info-pontos" class="info-pontos">
+        <p style="text-align: justify; margin: 10px;">Horarío De Funcionamento </p>
+        <p>Terça-Feira <span> 18:00 - 23:00</span></p>
+        <p>Quarta-Feira <span> 18:00 - 23:00</span></p>
+        <p>Quinta-Feira <span> 18:00 - 23:00</span></p>
+        <p>Sexta-Feira <span> 18:00 - 23:59</span></p>
+        <p>Sabado <span> 18:00 - 23:59</span></p>
+        <p>Domingo <span> 18:00 - 23:00</span></p></div>
+    
+
+
+    <div id="info-box" class="info-box">
+        <p style="text-align: justify; margin: 10px;">Informações da Lanchonete </p>
+        <div style="border-top: 2px solid #e5e5e5; font-weight: 200px; padding: 5px;">
+        <p> Entrega gratis acima de: <span style="border: none; background-color:5cb85c; color: white; font-size: 14px; font-weight: bold; padding: 5px; border-radius: 5px;">R$200,00</span></p>
+           <p> Entrega minima: <span style="border: none; background-color: #da3b3b;color: white; font-size: 14px; font-weight: bold; padding: 5px; border-radius: 5px;">R$0,00</span> </p>
+        <p> Taxa de entrega: <span style="border: none; background-color: #da3b3b;color: white; font-size: 14px; font-weight: bold; padding: 5px; border-radius: 5px;">R$5,00 até R$120,00</span></p>
+    <p> Tempo de entrega: <span style="border: none; background-color:5cb85c; color: white; font-size: 14px; font-weight: bold; padding: 5px; border-radius: 5px;">00:40 min</span> </p>
+    <p> Tempo de retirada: <span style="border: none; background-color:5cb85c; color: white; font-size: 14px; font-weight: bold; padding: 5px; border-radius: 5px;">00:15 min</span></p>
+</div>
+
+
+    </div>
+
+
         <div class="menu-container">
             <ul id="categorias">
                 <li>

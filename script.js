@@ -108,3 +108,33 @@ function copyOrderDetails() {
         alert('Seu Pedido foi copiado, Cole na caixa de mensagem Para enviar!');
     });
 }
+
+
+
+
+// FAZENDO AS INFORMAÇÕES APOS CLICAR NO TEMPO DA ENTREGA
+
+function toggleInfo(){
+    let informaçãoTempoEntrega = document.querySelector("#info-box")
+    if(informaçãoTempoEntrega.style.display === 'none' || informaçãoTempoEntrega.style.display === ''){
+        informaçãoTempoEntrega.style.display = 'block';
+    }
+
+    else{
+        informaçãoTempoEntrega.style.display = 'none'
+    }
+}
+
+
+// FAZENDO INFORMAÇÕES DO RELOGIO DA LOJA
+
+function infoRelogio() {
+    let infoHorario = document.querySelector("#info-pontos")
+    if(infoHorario.style.display ==='none' || infoHorario.style.display ===''){
+        infoHorario.style.display = 'block';
+        }
+
+        else
+            { infoHorario.style.display = 'none'
+                }
+}
