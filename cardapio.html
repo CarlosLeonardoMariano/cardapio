@@ -5,30 +5,68 @@
     <title>Cardápio</title>
     <link rel="stylesheet" href="styles.css">
     <header>
+
+        <div id="logoprincipal">
+            <div class="blur-background"></div>
+            <div style="text-align: center;"> <img src="Logotipo Churrascaria Restaurante Moderno Preto e Vermelho.png" alt="Logo Secundária" id="logosecundaria">
+            </div>
+
+
+
         <h1 id="h1header"> O PONTO DO LANCHE</h1>
        <div class="text-header">
         <span class="label">Tempo de Entrega: </span>
         <span class="delivery-time" onclick="toggleInfo()">40min</span>
         <span class="infoDelivery" onclick="toggleInfo()">Informações</span>
     </div>
+
+
     <div class="text-header2">
-        <span class="relogio" style="color: #008000;font-weight: bolder; cursor: pointer;" onclick="infoRelogio()"> 🕗 Aberto </span>
-        <span class="pontos"> 💲 Pontuação da Lanchonete</span>
+        <span class="relogio" id="relogio-status" style="font-weight: bolder; cursor: pointer;" onclick="infoRelogio()"> 🕗 Aberto </span>
+        <span class="pontos" onclick="togglePontos()"> 💲 Pontuação da Lanchonete</span>
     </div>
 
 
+    <div class="overlay3" id="overlay3"></div>
+    <div id="info-pontostrocas" class="info-pontostrocas">
+        <button class="close-btn3" onclick="togglePontos()">X</button>
+        <h2 style="padding: 2px;border-bottom: 1px solid black;"> Trocas de Pontos </h2>
+        <p style="font-size: 18px; font-family: Montserrat;">Participe da nossa trocas de pontos.</p>
+        <p style="font-size: 18px; font-family: Montserrat;">Cada <strong>Ponto</strong> valerá <strong>1 Real</strong></p>
+        <p style="font-size: 18px; font-family: Montserrat;">Voce irá Ganhar <strong> 1 ponto </strong> a cada <strong>R$ 15,00 gastos </strong> (menos o valor da entrega). </p>
+        <p style="font-size: 18px; font-family: Montserrat;">Faça o seu resgate a partir de <strong> 15 pontos.</strong></p>
+ 
+
+    </div>
+
+
+
+
+        <div class="overlay2" id="overlay2"></div>
     <div id="info-pontos" class="info-pontos">
-        <p style="text-align: justify; margin: 10px;">Horarío De Funcionamento </p>
-        <p>Terça-Feira <span> 18:00 - 23:00</span></p>
-        <p>Quarta-Feira <span> 18:00 - 23:00</span></p>
-        <p>Quinta-Feira <span> 18:00 - 23:00</span></p>
-        <p>Sexta-Feira <span> 18:00 - 23:59</span></p>
-        <p>Sabado <span> 18:00 - 23:59</span></p>
-        <p>Domingo <span> 18:00 - 23:00</span></p></div>
+        <button class="close-btn2" onclick="infoRelogio()">X</button>
+
+        <h2 style="padding: 2px;">Horarío De Funcionamento </h2>
+        <p class="schedule-item" style="border-bottom: 1px solid black;" > TERÇA - FEIRA <span class="schedule-item"> 18:00 - 23:00</span></p>
+        <p class="schedule-item" style="border-bottom: 1px solid black;" > QUARTA - FEIRA <span class="schedule-item"> 18:00 - 23:00</span></p>
+        <p class="schedule-item" style="border-bottom: 1px solid black;" > QUINTA - FEIRA <span class="schedule-item"> 18:00 - 23:00</span></p>
+        <p class="schedule-item" style="border-bottom: 1px solid black;" > SEXTA - FEIRA <span class="schedule-item"> 18:00 - 23:59</span></p>
+        <p class="schedule-item" style="border-bottom: 1px solid black;" > SABÁDO <span class="schedule-item"> 18:00 - 23:59</span></p>
+        <p class="schedule-item" style="border-bottom: 1px solid black;" > DOMINGO <span class="schedule-item"> 18:00 - 23:00</span></p> 
+    
+    </div>
+
+
+
+
+
     
 
-
+        <div class="overlay" id="overlay"></div>
     <div id="info-box" class="info-box">
+
+        <button class="close-btn" onclick="toggleInfo()">X</button>
+
         <p style="text-align: justify; margin: 10px;">Informações da Lanchonete </p>
         <div style="border-top: 2px solid #e5e5e5; font-weight: 200px; padding: 5px;">
         <p> Entrega gratis acima de: <span style="border: none; background-color:5cb85c; color: white; font-size: 14px; font-weight: bold; padding: 5px; border-radius: 5px;">R$200,00</span></p>
@@ -45,38 +83,38 @@
         <div class="menu-container">
             <ul id="categorias">
                 <li>
-                    <a href="http://127.0.0.1:3000/cardapio.html">
+                    <a href="#maisVendidos">
                         <div class="imagem"><img src="favicon/estrela.png" alt="" style="width: 40px;"></div>
                         <span>Mais Vendidos</span>
                     </a>
                 </li>
                
                 <li>
-                    <a href="http://127.0.0.1:3000/cardapio.htm">
+                    <a href="#todosOsLanches">
                         <div class="imagem"><img src="favicon/android-chrome-192x192.png" alt="" style="width: 40px;"></div>
                         <span>Lanches</span>
                     </a>
                 </li>
                 <li>
-                    <a href="http://127.0.0.1:3000/cardapio.htm">
+                    <a href="#refrigerantes">
                         <div class="imagem"><img src="favicon/Ícone-Refrigerante-PNG-300x300.png" alt="" style="width: 40px;"></div>
                         <span>Refrigerantes</span>
                     </a>
                 </li>
                 <li>
-                    <a href="http://127.0.0.1:3000/cardapio.htm">
+                    <a href="#doces">
                         <div class="imagem"><img src="favicon/doces.png" alt="" style="width: 40px;"></div>
                         <span>Doces</span>
                     </a>
                 </li>
                 <li>
-                    <a href="http://127.0.0.1:3000/cardapio.htm">
+                    <a href="#cervejas">
                         <div class="imagem"><img src="favicon/cerveja.webp" alt="" style="width: 40px;"></div>
                         <span>Cerveja</span>
                     </a>
                 </li>
                 <li>
-                    <a href="http://127.0.0.1:3000/cardapio.htm">
+                    <a href="#porção">
                         <div class="imagem_combo"><img src="favicon/porcoes.webp" alt="" style="width: 40px;"></div>
                         <span class="imagem2" >Porções</span>
                     </a>
@@ -91,7 +129,7 @@
 </head>
 <body>
     <div class="container">
-        <h1> MAIS VENDIDOS</h1>
+        <h1 id="maisVendidos"> MAIS VENDIDOS</h1>
         <div class="menu">
             <div class="menu-item">
                 <img src="x-salada-png-8.png" alt="X-SALADA" style="width: 200px;">
@@ -195,7 +233,7 @@
 
 
             <div class="container">
-                <h1>TODOS OS LANCHES</h1>
+                <h1 id="todosOsLanches">TODOS OS LANCHES</h1>
                 <div class="menu">
                     <div class="menu-item">
                         <img src="x-salada-png-8.png" alt="X-SALADA" style="width: 200px;">
@@ -351,7 +389,7 @@
 
     
                     <div class="container">
-                        <h1>REFRIGERANTES</h1>
+                        <h1 id="#refrigerantes">REFRIGERANTES</h1>
                         <div class="menu">
                             <div class="menu-item">
                                 <img src="coca lata.jfif" alt="COCA-COLA LATA" style="width: 200px;">
@@ -492,7 +530,7 @@
 
 
                             <div class="container">
-                        <h1>DOCES</h1>
+                        <h1 id="doces">DOCES</h1>
                         <div class="menu">
                             <div class="menu-item">
                                 <img src="bolo-de-pote-de-oreo.webp" alt="BOLO DE POTE OREO" style="width: 220px;">
@@ -531,7 +569,7 @@
 
 
                             <div class="container">
-                                <h1>CERVEJAS LONG NECK</h1>
+                                <h1 id="cervejas">CERVEJAS LONG NECK</h1>
                                 <div class="menu">
                                     <div class="menu-item">
                                         <img src="budwaizer long.jfif" alt="BUDWAIZER LONG NECK" style="width: 220px;">
@@ -608,7 +646,7 @@
 
                                     
                             <div class="container">
-                                <h1>PORÇÕES</h1>
+                                <h1 id="porção">PORÇÕES</h1>
                                 <div class="menu">
                                     <div class="menu-item">
                                         <img src="porcao batata.png" alt="PORÇÃO DE FRITAS" style="width: 180px;">

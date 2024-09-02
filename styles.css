@@ -1,6 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+.relogio {
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.relogio.aberto {
+    color: #008000; /* Verde para aberto */
+}
+
+.relogio.fechar {
+    color: #da3b3b; /* Vermelho para fechado */
+}
+
+
+
 body {
     font-family: Montserrat;font-weight:400;
     background-color: #f5f5f5;
@@ -8,11 +30,73 @@ body {
     padding: 0;
 }
 
+
+
+
 #h1header{font-family:Montserrat sans-serif;
 font-weight: 300;
 text-align: center;
 background-color: white;
 margin-bottom: 0px;
+margin-top: 10px;
+}
+
+
+#logoprincipal{ 
+    position: relative;
+    width: 100%;
+    height: 150px;
+    background-position: top top; /* Ajuste conforme necessário */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('Orange\ and\ Black\ Simple\ Modern\ Food\ Promo\ Billboard\ Web\ Ad.png'); /* Certifique-se de que o caminho da imagem está correto */
+
+}
+
+.blur-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url('Orange\ and\ Black\ Simple\ Modern\ Food\ Promo\ Billboard\ Web\ Ad.png'); /* Certifique-se de que o caminho da imagem está correto */
+    background-position: top top; /* Ajuste conforme necessário */
+    background-size: cover;
+    filter: blur(4px); /* Aplica o desfoque */
+}
+
+
+
+#logosecundaria {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: relative;
+    z-index: 1; /* Garante que a logo secundária esteja acima do fundo desfocado */
+}
+
+
+
+
+header{margin-bottom: 15em;}
+
+
+
+.menu-container {
+    width: 100%;
+    overflow-x: auto;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Opção para melhor visual */
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    margin-top: 2em; /* Ajuste este valor para garantir que o container não fique oculto pelo menu-container */
 }
 
 
@@ -70,39 +154,258 @@ cursor: pointer;
 font-weight: bolder;
 font-size: 15px;}
 
-#info-box{background-color: rgb(255, 255, 255);
-    line-height: 20px;
-    border: none;
-    border-radius: 10px;
-    width: 500px;
-    height: 240px;
-padding: 5px;
-display: none; /* Oculta o box por padrão */
 
-margin: auto;}
+/* Overlay de fundo */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(1px);
+    display: none; /* Oculta o overlay por padrão */
+    z-index: 1000; /* Garante que o overlay esteja acima de outros elementos */
+}
 
-#info-pontos{  
+
+
+
+
+
+
+
+/* Info Box */
+.info-box {
     background-color: rgb(255, 255, 255);
     line-height: 20px;
     border: none;
     border-radius: 10px;
     width: 500px;
-    height: 240px;
-padding: 5px;
-display: none; /* Oculta o box por padrão */
-
-margin: auto;}
-
-
-.menu-container {
-    width: 100%;
-    overflow-x: auto;
-    background-color: #fff ;
-    display: flex;
-    justify-content: center;
-    padding: 20px 0;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional for better visual */
+    padding: 20px;
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    display: none; /* Oculta o box por padrão */
+    opacity: 0; /* Inicialmente invisível */
+    z-index: 1001; /* Garante que o box esteja acima do overlay */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Adiciona animação */
 }
+
+/* Estado visível do Info Box */
+.info-box.show {
+    display: block; /* Torna o box visível */
+    opacity: 1; /* Torna o box opaco */
+    transform: translate(-50%, -50%) scale(1); /* Escala para o tamanho original */
+}
+
+/* Adiciona efeito de slide */
+.info-box.slide-down {
+    transform: translate(-50%, -50%) scale(1); /* Adiciona efeito de slide */
+}
+
+
+
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    color: #333;
+    font-size: 24px;
+    cursor: pointer;
+    transition: color 0.1s;
+    line-height: 1; /* Ajusta a altura da linha */
+
+}
+
+
+.close-btn:hover {
+    color: #ffffff; /* Muda a cor ao passar o mouse */
+    background-color: #DA3B3B;
+}
+
+
+
+
+/* Overlay de fundo */
+.overlay2 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(1px);
+    display: none; /* Oculta o overlay por padrão */
+    z-index: 1000; /* Garante que o overlay esteja acima de outros elementos */
+}
+
+/* Info Box */
+.info-pontos {
+    background-color: rgb(255, 255, 255);
+    line-height: 20px;
+    border: none;
+    border-radius: 10px;
+    width: 500px;
+    padding: 20px;
+    position: fixed;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    display: none; /* Oculta o box por padrão */
+    opacity: 0; /* Inicialmente invisível */
+    z-index: 1001; /* Garante que o box esteja acima do overlay */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Adiciona animação */
+}
+
+/* Estado visível do Info Box */
+.info-pontos.show2 {
+    display: block; /* Torna o box visível */
+    opacity: 1; /* Torna o box opaco */
+    transform: translate(-50%, -50%) scale(1); /* Escala para o tamanho original */
+}
+
+
+
+
+
+
+.overlay3 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(1px);
+    display: none; /* Oculta o overlay por padrão */
+    z-index: 1000; /* Garante que o overlay esteja acima de outros elementos */
+}
+
+
+
+
+
+.info-pontostrocas{
+
+    background-color: rgb(255, 255, 255);
+    line-height: 20px;
+    border: none;
+    border-radius: 10px;
+    width: 600px;
+    padding: 20px;
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    display: none; /* Oculta o box por padrão */
+    opacity: 0; /* Inicialmente invisível */
+    z-index: 1001; /* Garante que o box esteja acima do overlay */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Adiciona animação */
+
+}
+
+
+
+
+.info-pontostrocas.show3 {
+    display: block; /* Torna o box visível */
+    opacity: 1; /* Torna o box opaco */
+    transform: translate(-50%, -50%) scale(1); /* Escala para o tamanho original */
+}
+
+
+
+
+
+/* Botão de fechar */
+.close-btn2 {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    color: #333;
+    font-size: 24px;
+    cursor: pointer;
+    transition: color 0.1s;
+    line-height: 1; /* Ajusta a altura da linha */
+}
+
+/* Cor do botão ao passar o mouse */
+.close-btn2:hover {
+    color: #ffffff; /* Muda a cor ao passar o mouse */
+    background-color: #DA3B3B;
+}
+
+
+
+
+
+
+
+.close-btn3 {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    color: #333;
+    font-size: 24px;
+    cursor: pointer;
+    transition: color 0.1s;
+    line-height: 1; /* Ajusta a altura da linha */
+}
+
+/* Cor do botão ao passar o mouse */
+.close-btn3:hover {
+    color: #ffffff; /* Muda a cor ao passar o mouse */
+    background-color: #DA3B3B;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* CSS */
+.schedule-item {
+    display: flex;
+    justify-content: space-between; /* Distribui o conteúdo entre os dois extremos */
+    align-items: center; /* Alinha verticalmente ao centro */
+    font-weight: bolder;
+    padding: 5px;
+}
+.schedule-time {
+    flex: 1;
+    text-align: center; /* Centraliza o texto dentro do flex container */
+}
+
+
+
+
+
+
+
 
 #categorias {
     list-style: none;
@@ -158,12 +461,6 @@ margin: auto;}
     transition: all 0.2s ease;
 }
 
-.container {
-    width: 100%;
-    max-width: 1200px;
-    margin: auto;
-    padding: 20px;
-}
 
 
 h1 {
@@ -173,9 +470,7 @@ h1 {
     font-weight: bold;
 }
 
-.container {
-    padding: 20px;
-}
+
 
 
 .menu {

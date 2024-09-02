@@ -114,27 +114,114 @@ function copyOrderDetails() {
 
 // FAZENDO AS INFORMAÇÕES APOS CLICAR NO TEMPO DA ENTREGA
 
-function toggleInfo(){
-    let informaçãoTempoEntrega = document.querySelector("#info-box")
-    if(informaçãoTempoEntrega.style.display === 'none' || informaçãoTempoEntrega.style.display === ''){
-        informaçãoTempoEntrega.style.display = 'block';
-    }
-
-    else{
-        informaçãoTempoEntrega.style.display = 'none'
+function toggleInfo() {
+    var infoBox = document.getElementById('info-box');
+    var overlay = document.getElementById('overlay');
+    
+    if (infoBox.style.display === 'block') {
+        // Ocultar infoBox
+        infoBox.classList.remove('show');
+        setTimeout(function() {
+            infoBox.style.display = 'none';
+            overlay.style.display = 'none';
+        }, 10); // Tempo para animação de ocultar
+    } else {
+        // Mostrar infoBox
+        infoBox.style.display = 'block';
+        overlay.style.display = 'block';
+        setTimeout(function() {
+            infoBox.classList.add('show');
+        }, 5); // Breve atraso para garantir que a classe de exibição seja aplicada
     }
 }
+
 
 
 // FAZENDO INFORMAÇÕES DO RELOGIO DA LOJA
 
 function infoRelogio() {
     let infoHorario = document.querySelector("#info-pontos")
-    if(infoHorario.style.display ==='none' || infoHorario.style.display ===''){
-        infoHorario.style.display = 'block';
+    let overlay2 = document.getElementById('overlay2');
+
+
+    if(infoHorario.style.display ==='block'){
+        infoHorario.classList.remove('show2')
+        setTimeout(function(){
+            infoHorario.style.display = 'none'
+            overlay2.style.display = 'none'
+        },10)
+
+        } else
+            { infoHorario.style.display = 'block'
+                overlay2.style.display = 'block'
+                setTimeout(function(){
+                    infoHorario.classList.add('show2');
+                    updateRelogioStatus();
+                },5)
+           }
         }
 
-        else
-            { infoHorario.style.display = 'none'
+
+
+
+
+
+
+
+
+
+        function updateRelogioStatus() {
+            let relogioStatus = document.getElementById('relogio-status');
+            let currentTime = new Date();
+            let currentHour = currentTime.getHours();
+            let currentMinute = currentTime.getMinutes();
+            let currentSegundos = currentTime.getSeconds();
+
+            // Horários de funcionamento (ajuste conforme necessário)
+            let openingHour = 18; // 18:00
+            let closingHour = 23; // 23:00
+
+            if (currentHour >= openingHour && currentHour <= closingHour) {
+                if (currentHour === closingHour && currentMinute > 0) {
+                    relogioStatus.classList.add('fechar');
+                    relogioStatus.classList.remove('aberto');
+                    relogioStatus.textContent = '🕗 Fechado';
+                } else {
+                    relogioStatus.classList.add('aberto');
+                    relogioStatus.classList.remove('fechar');
+                    relogioStatus.textContent = '🕗 Aberto';
                 }
+            } else {
+                relogioStatus.classList.add('fechar');
+                relogioStatus.classList.remove('aberto');
+                relogioStatus.textContent = '🕗 Fechado';
+            }
+        }
+
+        // Verifica o status do relógio ao carregar a página
+        window.onload = updateRelogioStatus;
+
+
+
+
+
+
+function togglePontos(){
+
+    let pontos = document.querySelector('#info-pontostrocas')
+    let overlay3 = document.querySelector('#overlay3')
+
+    if(pontos.style.display ==='block'){
+        pontos.classList.remove('show3') ;setTimeout(function(){
+            pontos.style.display = 'none'
+            overlay3.style.display = 'none'},10)
+
+    } else{
+        pontos.style.display = 'block'
+        overlay3.style.display = 'block'
+        setTimeout(function(){
+            pontos.classList.add('show3');
+        },5)
+    }
+
 }
