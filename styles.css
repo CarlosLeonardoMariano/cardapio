@@ -55,7 +55,7 @@ margin-top: 10px;
 
 .blur-background {
     position: absolute;
-    width: 100%;
+    width: 110%;
     height: 100%;
     background-image: url('capa1.png'); /* Certifique-se de que o caminho da imagem está correto */
     background-position: 60% 24%; /* Ajuste conforme necessário */
