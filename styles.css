@@ -961,7 +961,7 @@ footer {
     }
 
     #logosecundaria {
-        width: 100px; /* Reduz o tamanho da logo em telas muito pequenas */
+        width: 80px; /* Reduz o tamanho da logo em telas muito pequenas */
         height: 80px;
     }
 
