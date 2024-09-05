@@ -900,13 +900,16 @@ footer {
         flex: 1 1 98%; /* Faz com que cada item ocupe a largura total */
     }
 
+    header{margin-bottom: 15em}
+
     #categorias {
         flex-direction: column;
     }
 
     #categorias li {
-        margin: 10px 0;
+        margin: 15px 0;
     }
+
 
     .text-header, .text-header2 {
         flex-direction: column;
@@ -947,5 +950,7 @@ footer {
         font-size: 14px;
     }
 }
+.info-pontostrocas{
+    margin: 10px;
+}
 
-header{margin-bottom: 15em}
