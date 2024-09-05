@@ -28,6 +28,7 @@ body {
     background-color: #f5f5f5;
     margin: 0;
     padding: 0;
+
 }
 
 
@@ -46,10 +47,9 @@ margin-top: 10px;
     position: relative;
     width: 100%;
     height: 150px;
-    background-position: top top; /* Ajuste conforme necessário */
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url('Orange\ and\ Black\ Simple\ Modern\ Food\ Promo\ Billboard\ Web\ Ad.png'); /* Certifique-se de que o caminho da imagem está correto */
+    background-image: url('capa1.png'); /* Certifique-se de que o caminho da imagem está correto */
 
 }
 
@@ -57,10 +57,10 @@ margin-top: 10px;
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: url('Orange\ and\ Black\ Simple\ Modern\ Food\ Promo\ Billboard\ Web\ Ad.png'); /* Certifique-se de que o caminho da imagem está correto */
-    background-position: top top; /* Ajuste conforme necessário */
+    background-image: url('capa1.png'); /* Certifique-se de que o caminho da imagem está correto */
+    background-position: 60% 24%; /* Ajuste conforme necessário */
     background-size: cover;
-    filter: blur(4px); /* Aplica o desfoque */
+    filter: blur(0.5px); /* Aplica o desfoque */
 }
 
 
@@ -210,7 +210,6 @@ font-size: 15px;}
 
 
 .close-btn {
-    position: absolute;
     top: 10px;
     right: 10px;
     background: none;
@@ -220,6 +219,7 @@ font-size: 15px;}
     cursor: pointer;
     transition: color 0.1s;
     line-height: 1; /* Ajusta a altura da linha */
+
 
 }
 
@@ -327,7 +327,6 @@ font-size: 15px;}
 
 /* Botão de fechar */
 .close-btn2 {
-    position: absolute;
     top: 10px;
     right: 10px;
     background: none;
@@ -337,6 +336,7 @@ font-size: 15px;}
     cursor: pointer;
     transition: color 0.1s;
     line-height: 1; /* Ajusta a altura da linha */
+
 }
 
 /* Cor do botão ao passar o mouse */
@@ -352,7 +352,6 @@ font-size: 15px;}
 
 
 .close-btn3 {
-    position: absolute;
     top: 10px;
     right: 10px;
     background: none;
@@ -362,12 +361,16 @@ font-size: 15px;}
     cursor: pointer;
     transition: color 0.1s;
     line-height: 1; /* Ajusta a altura da linha */
+    text-align: center;
+    
+    
 }
 
 /* Cor do botão ao passar o mouse */
 .close-btn3:hover {
     color: #ffffff; /* Muda a cor ao passar o mouse */
     background-color: #DA3B3B;
+    text-align: center;
 
 
 }
@@ -412,6 +415,8 @@ font-size: 15px;}
     margin: 0;
     padding: 0;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 #categorias li {
@@ -521,17 +526,32 @@ h1 {
     }
 
 
-.div_Valor, .div_valor {
-    margin: 10px 0;
-    margin-left: 45%
-
-}
-
-@media (max-width: 768px) {
-    .menu-item {
-        flex: 1 1 100%; /* Em telas menores, os itens ocupam toda a largura disponível */
+    .div_Valor p {
+background-color: #0056b3;
+    width: 95%;
+    text-align: center;
     }
+
+
+
+
+
+
+.div_Valor-refri p {
+    background-color: #0056b3;
+    width: 94%;
+    text-align: center;
 }
+
+
+
+
+
+.div_Valor-porção p {background-color: #0056b3;
+    width: 94%;
+    text-align: center;}
+
+
 
 
 
@@ -576,7 +596,7 @@ h1 {
 }
 
 button {
-    background-color: #007BFF;
+    background-color: #00d812;
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -584,33 +604,139 @@ button {
     cursor: pointer;
     font-size: 16px;
     transition: all 0.3s ease;
+    width: 100%;
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #235700;
 }
 
+
+
+/* Estilos gerais */
+
+
+h2 {
+    color: #333;
+    text-align: center;
+}
+
+#total{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Estilo do container do carrinho */
 .cart-container {
-    width: 100%;
-    max-width: 600px;
-    margin: 50px auto;
-    font-family: 'Roboto', sans-serif;
+    width: 80%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    
 }
 
 .cart {
-    background: #ffffff;
-    color: #333333;
-    text-align: center;
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin: 20px 0;
-    transition: all 0.3s ease;
+    padding: 10px;
 }
 
-.cart:hover {
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+#cart-items {
+    list-style: none;
+    padding: 0;
 }
+
+#cart-items li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#cart-items button {
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#cart-items button:hover {
+    background-color: #c0392b;
+}
+
+/* Estilo dos botões */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+}
+
+.btn-primary {
+    background-color: #3498db;
+}
+
+.btn-primary:hover {
+    background-color: #2980b9;
+}
+
+.btn-secondary {
+    background-color: #2ecc71;
+}
+
+.btn-secondary:hover {
+    background-color: #27ae60;
+}
+
+/* Estilo da área de checkout e resumo do pedido */
+.checkout-summary-container {
+    width: 80%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.checkout-container, .order-summary-container {
+    margin-top: 20px;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+input[type="text"], input[type="number"], select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+pre {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    overflow-x: auto;
+}
+
+
+
+
 
 ul {
     list-style-type: none;
@@ -623,10 +749,11 @@ ul li {
 
 .centralized-button {
     display: block;
+    width: 100%;
     margin: 20px auto;
     padding: 10px 20px;
     font-size: 16px;
-    background-color: #007BFF;
+    background-color: #1ec943;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -674,7 +801,7 @@ ul li {
 }
 
 .copy-button {
-    background-color: #007BFF;
+    background-color: #0daf30;
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -687,9 +814,58 @@ ul li {
     transition: all 0.3s ease;
 }
 
-.copy-button:hover {
-    background-color: #0056b3;
+.remove-button{  
+     background-color: #d62222;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    transition: all 0.3s ease;
 }
+
+.remove-button:hover{
+    background-color: darkred;
+}
+
+
+
+.copy-button:hover {
+    background-color: #02cc0c;
+}
+
+
+
+.notification {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: #4CAF50; /* Verde para sucesso */
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1000; /* Certifique-se de que a notificação esteja acima de outros elementos */
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out; /* Transição suave para a opacidade */
+}
+
+
+
+
+.removerMsg{ position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: #ec1010; /* Verde para sucesso */
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1000; /* Certifique-se de que a notificação esteja acima de outros elementos */
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out; /* Transição suave para a opacidade */}
 
 footer img {
     width: 1cm;
@@ -704,4 +880,70 @@ footer {
 
 
 .valor{font-weight: bolder;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .menu-item {
+        flex: 1 1 100%; /* Faz com que cada item ocupe a largura total */
+    }
+
+    #categorias {
+        flex-direction: column;
+    }
+
+    #categorias li {
+        margin: 10px 0;
+    }
+
+    .text-header, .text-header2 {
+        flex-direction: column;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    .cart-container {
+        width: 95%;
+    }
+
+    button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+    
+    .menu-item img {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    h1, h2 {
+        font-size: 18px;
+    }
+
+    .text-header, .text-header2 {
+        font-size: 14px;
+    }
+
+    .description h2 {
+        font-size: 20px;
+    }
+
+    .description p {
+        font-size: 14px;
+    }
 }

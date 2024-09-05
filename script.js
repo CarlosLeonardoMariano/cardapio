@@ -5,11 +5,15 @@ function addToCart(item, price) {
     cart.push({ item, price });
     total += price;
     updateCart();
+    alertar('Pedido adicionado no carrinho no final da tela !')
+
+
 }
 
 function updateCart() {
     const cartItems = document.getElementById('cart-items');
     const totalDisplay = document.getElementById('total');
+
     cartItems.innerHTML = '';
     cart.forEach((cartItem, index) => {
         cartItems.innerHTML += `<li>${cartItem.item} - R$ ${cartItem.price.toFixed(2)} <button onclick="removeFromCart(${index})">Remover</button></li>`;
@@ -17,28 +21,64 @@ function updateCart() {
     totalDisplay.textContent = total.toFixed(2);
 }
 
+
+    function alertar(message){
+                // Mostrar a notificação
+                const notificação = document.getElementById('notification');
+                    notificação.textContent = message;
+
+                    notificação.style.display = 'block';
+                    notificação.style.opacity = '1';
+                    setTimeout(()=>{
+                        notificação.style.opacity = '0';
+                    
+                        setTimeout(()=>{
+                            notificação.style.display = 'none';
+                        },500);
+                    
+                    },1500);
+                    
+                }
+
+
+
+function removerAlerta(msgremovido){
+    const removerMsg = document.getElementById('removerMsg')
+    removerMsg.textContent = msgremovido;
+
+    removerMsg.style.display = 'block';
+    removerMsg.style.opacity = '1';
+    setTimeout(()=>{
+        removerMsg.style.opacity = '0';
+
+        setTimeout(()=> {
+            removerMsg.style.display ='none';
+        },500);
+    },1500);
+
+}
+    
 function removeFromCart(index) {
     total -= cart[index].price;
     cart.splice(index, 1);
     updateCart();
+    removerAlerta('Pedido removido do carrinho')
 }
 
 function checkout() {
     document.getElementById('checkout').style.display = 'block';
+    // Rolagem automática para a seção de checkout
+    document.getElementById('checkout').scrollIntoView({ behavior: 'smooth' });
 }
 
 function checkPaymentMethod() {
     const paymentMethod = document.getElementById('payment-method').value;
     const pixMessage = document.getElementById('pix-message');
 
-    if (paymentMethod === 'pix') {
-        pixMessage.style.display = 'block';
-    } else {
-        pixMessage.style.display = 'none';
-    }
-
+    pixMessage.style.display = paymentMethod === 'pix' ? 'block' : 'none';
     const cashOptions = document.getElementById('cash-options');
     cashOptions.style.display = paymentMethod === 'dinheiro' ? 'block' : 'none';
+
     if (paymentMethod !== 'dinheiro') {
         document.getElementById('change-needed').checked = false;
         document.getElementById('change-amount').style.display = 'none';
@@ -49,6 +89,7 @@ function toggleChangeInput() {
     const changeNeeded = document.getElementById('change-needed').checked;
     const changeAmount = document.getElementById('change-amount');
     changeAmount.style.display = changeNeeded ? 'block' : 'none';
+
     if (!changeNeeded) {
         document.getElementById('cash-amount').value = '';
         document.getElementById('change').textContent = '0.00';
@@ -58,6 +99,7 @@ function toggleChangeInput() {
 function calculateChange() {
     const cashAmount = parseFloat(document.getElementById('cash-amount').value);
     const changeDisplay = document.getElementById('change');
+
     if (!isNaN(cashAmount) && cashAmount >= total) {
         const change = cashAmount - total;
         changeDisplay.textContent = change.toFixed(2);
@@ -75,8 +117,11 @@ function checkDeliveryOption() {
 function confirmOrder() {
     const orderSummary = document.getElementById('order-summary');
     const orderDetails = document.getElementById('order-details');
-    orderSummary.style.display = 'block';
 
+    // Exibir o resumo do pedido
+    orderSummary.style.display = 'block';
+    
+    // Gerar o resumo do pedido
     let summaryText = 'Pedido Confirmado:\n\n';
     cart.forEach((cartItem, index) => {
         summaryText += `${index + 1}. ${cartItem.item} - R$ ${cartItem.price.toFixed(2)}\n`;
@@ -84,11 +129,14 @@ function confirmOrder() {
     summaryText += `\nTotal: R$ ${total.toFixed(2)}\n\n`;
     summaryText += `Método de Pagamento: ${document.getElementById('payment-method').value}\n`;
     summaryText += `Precisa de Troco: ${document.getElementById('change-needed').checked ? 'Sim' : 'Não'}\n`;
+    
     if (document.getElementById('change-needed').checked) {
         summaryText += `Valor da Nota: R$ ${parseFloat(document.getElementById('cash-amount').value).toFixed(2)}\n`;
         summaryText += `Troco: R$ ${document.getElementById('change').textContent}\n`;
     }
+
     summaryText += `Retirada ou Entrega: ${document.getElementById('delivery-option').value}\n`;
+
     if (document.getElementById('delivery-option').value === 'entrega') {
         summaryText += `Endereço: ${document.getElementById('address').value}\n`;
         summaryText += `Nome: ${document.getElementById('name').value}\n`;
@@ -100,6 +148,9 @@ function confirmOrder() {
     }
 
     orderDetails.textContent = summaryText;
+
+    // Rolagem automática para a seção de resumo do pedido
+    orderSummary.scrollIntoView({ behavior: 'smooth' });
 }
 
 function copyOrderDetails() {
@@ -111,6 +162,12 @@ function copyOrderDetails() {
 
 
 
+function removeOrderSummary() {
+    const orderSummary = document.getElementById('order-summary');
+    const orderDetails = document.getElementById('order-details');
+orderSummary.style.display = 'none'
+orderDetails.textContent = ''
+}
 
 // FAZENDO AS INFORMAÇÕES APOS CLICAR NO TEMPO DA ENTREGA
 
@@ -160,11 +217,6 @@ function infoRelogio() {
                 },5)
            }
         }
-
-
-
-
-
 
 
 
@@ -225,3 +277,24 @@ function togglePontos(){
     }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

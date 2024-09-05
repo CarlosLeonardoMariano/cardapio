@@ -128,6 +128,18 @@
 
 </head>
 <body>
+
+
+
+
+    <div id="notification" class="notification" style="display: none;">
+        Item adicionado ao carrinho! <br>
+        Role Até o carrinho no fim da tela!
+    </div>
+
+
+
+
     <div class="container">
         <h1 id="maisVendidos"> MAIS VENDIDOS</h1>
         <div class="menu">
@@ -392,7 +404,7 @@
                         <h1 id="#refrigerantes">REFRIGERANTES</h1>
                         <div class="menu">
                             <div class="menu-item">
-                                <img src="coca lata.jfif" alt="COCA-COLA LATA" style="width: 200px;">
+                                <img src="coca lata.jfif" alt="COCA-COLA LATA" style="width: 180px;">
                                 <div class="description">
                                     <h2> Coca-Cola Lata</h2>
                                     <div class="div_Valor-refri"> <p  class="valor" style="color: white;">R$ 7,00 ou 7 pts</p> </div>
@@ -533,7 +545,7 @@
                         <h1 id="doces">DOCES</h1>
                         <div class="menu">
                             <div class="menu-item">
-                                <img src="bolo-de-pote-de-oreo.webp" alt="BOLO DE POTE OREO" style="width: 220px;">
+                                <img src="bolo-de-pote-de-oreo.webp" alt="BOLO DE POTE OREO" style="width: 228px;">
                                 <div class="description">
                                     <h2> Bolo De Pote Oreo</h2>
                                     <div class="div_Valor-refri"> <p  class="valor" style="color: white;">R$ 13,00 ou 13 pts</p> </div>
@@ -553,7 +565,7 @@
 
 
                             <div class="menu-item">
-                                <img src="bolo brigadeiro.webp" alt="BOLO DE POTE DE BRIGADEIRO" style="width: 220px;">
+                                <img src="bolo brigadeiro.webp" alt="BOLO DE POTE DE BRIGADEIRO" style="width: 247px;">
                                 <div class="description">
                                     <h2> Bolo De Pote Brigadeiro</h2>
                                     <div class="div_Valor-refri"> <p  class="valor" style="color: white;">R$ 13,00 ou 13 pts</p> </div>
@@ -605,7 +617,7 @@
 
 
                                     <div class="menu-item">
-                                        <img src="1077-cerveja-stella-artois-long-neck-275ml.png" alt="STELLA LONG NECK " style="width: 220px;">
+                                        <img src="1077-cerveja-stella-artois-long-neck-275ml.png" alt="STELLA LONG NECK " style="width: 210px;">
                                         <div class="description">
                                             <h2> Stella-Artois Long Neck</h2>
                                             <div class="div_Valor-refri"> <p  class="valor" style="color: white;">R$ 13,00 ou 13 pts</p> </div>
@@ -615,7 +627,7 @@
 
 
                                     <div class="menu-item">
-                                        <img src="sem glutem stea.webp" alt="STELLA LONG NECK SEM GLÚTEN " style="width: 160px;">
+                                        <img src="sem glutem stea.webp" alt="STELLA LONG NECK SEM GLÚTEN " style="width: 158px;">
                                         <div class="description">
                                             <h2> Stella Sem Glúten LN</h2>
                                             <div class="div_Valor-refri"> <p  class="valor" style="color: white;">R$ 12,00 ou 12 pts</p> </div>
@@ -649,11 +661,11 @@
                                 <h1 id="porção">PORÇÕES</h1>
                                 <div class="menu">
                                     <div class="menu-item">
-                                        <img src="porcao batata.png" alt="PORÇÃO DE FRITAS" style="width: 180px;">
+                                        <img src="porcao batata.png" alt="PORÇÃO DE FRITAS" style="width: 170px;">
                                         <div class="description">
                                             <h2> Porção De Fritas Grande</h2>
                                             <p>porção de batatas fritas + molhos especial da casa (catchup + maionese + mostarda) opcional do cliente.</p>
-                                            <div class="div_Valor-refri"> <p  class="valor" style="color: white;">R$ 17,00 ou 17 pts</p> </div>
+                                            <div class="div_Valor-porção"> <p  class="valor" style="color: white;">R$ 17,00 ou 17 pts</p> </div>
                                             <button onclick="addToCart('PORÇÃO DE FRITAS', 17)">Adicionar</button>
                                         </div>
                                     </div>
@@ -665,7 +677,7 @@
                                         <div class="description">
                                             <h2> Porção De Fritas C/ Cheddar e Bacon Pequena</h2>
                                             <P>Porção de batatas fritas com cheddar e pedaços de bacon crocante + molhos</P>
-                                            <div class="div_Valor-refri"> <p  class="valor" style="color: white;">R$ 20,00 ou 20 pts</p> </div>
+                                            <div class="div_Valor-porção"> <p  class="valor" style="color: white;">R$ 20,00 ou 20 pts</p> </div>
                                             <button onclick="addToCart('PORÇÃO DE FRITAS C/ CHEDDAR E BACON PEQUENA', 25)">Adicionar</button>
                                         </div>
                                     </div>
@@ -679,7 +691,7 @@
                                         <div class="description">
                                             <h2> Porção De Fritas C/ Cheddar e Bacon Grande</h2>
                                             <P>Porção de batatas fritas com cheddar e pedaços de bacon crocante + molhos</P>
-                                            <div class="div_Valor-refri"> <p  class="valor" style="color: white;">R$ 25,00 ou 25 pts</p> </div>
+                                            <div class="div_Valor-porção"> <p  class="valor" style="color: white;">R$ 25,00 ou 25 pts</p> </div>
                                             <button onclick="addToCart('PORÇÃO DE FRITAS C/ CHEDDAR E BACON GRANDE', 25)">Adicionar</button>
                                         </div>
                                     </div>
@@ -689,7 +701,7 @@
                                         <div class="description">
                                             <h2> Porção De Mini Pastéis</h2>
                                             <P>Porção de Pastéis + molhos da casa.</P>
-                                            <div class="div_Valor-refri"> <p  class="valor" style="color: white;">R$ 25,00 ou 25 pts</p> </div>
+                                            <div class="div_Valor-porção"> <p  class="valor" style="color: white;">R$ 25,00 ou 25 pts</p> </div>
                                             <button onclick="addToCart('PORÇÃO DE MINI PASTÉIS', 25)">Adicionar</button>
                                         </div>
                                     </div>
@@ -701,7 +713,7 @@
                                         <div class="description">
                                             <h2> Porção De Calabresa Acebolada</h2>
                                             <P>Porção de calabresa acebolada + salada + molhos da casa.</P>
-                                            <div class="div_Valor-refri"> <p  class="valor" style="color: white;">R$ 30,00 ou 30 pts</p> </div>
+                                            <div class="div_Valor-porção"> <p  class="valor" style="color: white;">R$ 30,00 ou 30 pts</p> </div>
                                             <button onclick="addToCart('PORÇÃO DE CALABRESA', 30)">Adicionar</button>
                                         </div>
                                     </div>
@@ -711,7 +723,7 @@
                                         <div class="description">
                                             <h2> Porção De Tilápia Crocante</h2>
                                             <P>Porção de tilápia + molhos da casa.</P>
-                                            <div class="div_Valor-refri"> <p  class="valor" style="color: white;">R$ 35,00 ou 35 pts</p> </div>
+                                            <div class="div_Valor-porção"> <p  class="valor" style="color: white;">R$ 35,00 ou 35 pts</p> </div>
                                             <button onclick="addToCart('PORÇÃO DE TILÁPIA', 35)">Adicionar</button>
                                         </div>
                                     </div>
@@ -721,7 +733,7 @@
                                         <div class="description">
                                             <h2> Porção De Contra Filé</h2>
                                             <P>Porção de contra filé + batatas + molhos da casa.</P>
-                                            <div class="div_Valor-refri"> <p  class="valor" style="color: white;">R$ 45,00 ou 45 pts</p> </div>
+                                            <div class="div_Valor-porção"> <p  class="valor" style="color: white;">R$ 45,00 ou 45 pts</p> </div>
                                             <button onclick="addToCart('PORÇÃO DE CONTRA FILÉ', 45)">Adicionar</button>
                                         </div>
                                     </div>
@@ -732,7 +744,7 @@
                                         <div class="description">
                                             <h2> Porção De Coxinhas</h2>
                                             <P>Porção de mini coxinhas + molhos da casa.</P>
-                                            <div class="div_Valor-refri"> <p  class="valor" style="color: white;">R$ 30,00 ou 30 pts</p> </div>
+                                            <div class="div_Valor-porção"> <p  class="valor" style="color: white;">R$ 30,00 ou 30 pts</p> </div>
                                             <button onclick="addToCart('PORÇÃO DE MINI COXINHA', 30)">Adicionar</button>
                                         </div>
                                     </div>
@@ -743,7 +755,7 @@
                                         <div class="description">
                                             <h2> Porção De Bolinho</h2>
                                             <P>Porção de mini bolinhos de mandioca com carne seca + cream cheese + molhos da casa.</P>
-                                            <div class="div_Valor-refri"> <p  class="valor" style="color: white;">R$ 37,00 ou 37 pts</p> </div>
+                                            <div class="div_Valor-porção"> <p  class="valor" style="color: white;">R$ 37,00 ou 37 pts</p> </div>
                                             <button onclick="addToCart('PORÇÃO DE BOLINHOS C/ CARNE', 37)">Adicionar</button>
                                         </div>
                                     </div>
@@ -760,14 +772,14 @@
 
     
 
-    
+    <div class="removerMsg" id="removerMsg">Pedido removido do carrinho</div>
 
 
     <div class="cart-container">
         <div class="cart">
             <h2>Meus Pedidos</h2>
             <ul id="cart-items"></ul>
-            <p>Total: R$ <span id="total">0.00</span></p>
+            <p style="font-size: 21px;">Total: R$ <span id="total">0.00</span></p>
             <div>
                 <label for="observations">Observações:</label>
                 <textarea id="observations" rows="3" cols="30" placeholder="Adicione alguma observação..."></textarea>
@@ -787,8 +799,8 @@
                     <option value="dinheiro">Dinheiro</option>
                 </select>
 
-                <div id="pix-message" style="display:none; color: rgb(202, 18, 12); margin-top: 10px;">
-                    A chave Pix é: <span id="XxX-XxX-XxX"></span>
+                <div id="pix-message" style="display:none; color: rgb(202, 18, 12); margin-top: 15px; margin-bottom: 15px;">
+                    A chave Pix é: <span id="XxX-XxX-XxX" style="margin: 5px; padding: 2px;border: 1px solid black;">11-973245437</span>
                 </div>
 
                 <div id="cash-options" style="display:none;">
@@ -815,13 +827,15 @@
                     <p>Não se esqueça da taxa, entre R$5,00 e R$25,00</p>
                 </div>
 
-                <button class="centralized-button" type="button" onclick="confirmOrder()">Confirmar Pedido</button>
+                <button class="centralized-button"  type="button" onclick="confirmOrder()">Confirmar Pedido</button>
             </form>
         </div>
         <div id="order-summary" class="order-summary-container" style="display:none;">
             <h2>Resumo do Pedido</h2>
             <pre id="order-details"></pre>
+            <div style="display: flex;">
             <button class="copy-button" onclick="copyOrderDetails()">Copiar Resumo</button>
+            <button  class="remove-button" onclick="removeOrderSummary()" style="text-align: center;">Remover resumo</button></div>
         </div>
     </div>
 
@@ -831,10 +845,6 @@
      <script src="script.js"></script>
     <footer>
        
-        <a href="https://www.instagram.com/arigataisushi/" target="_blank" rel="noopener noreferrer"><img src="icon/instagram.png"></img></a>
-      <a href="https://www.facebook.com/yakisobaexpresss/" target="blank" rel="noopener noreferrer"><img src="icon/facebook.png" alt=""></a>
-      <a href="https://wa.me/5511943041258" target="_blank" rel="noopener noreferrer"><img src="icon/whatsapp.png" alt=""></img></a>
-        <a href="https://maps.app.goo.gl/uEG6xYebsVKKYqeg7" target="_blank" rel="noopener noreferrer"><img src="icon/ferramenta.png" alt=""></a>
        
     </footer>
     
