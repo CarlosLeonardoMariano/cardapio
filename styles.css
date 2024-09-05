@@ -976,6 +976,9 @@ footer {
 
 
 
+
+
+
 /* Estilos adicionais para dispositivos ainda menores (max-width: 480px) */
 @media (max-width: 480px) {
 
@@ -984,7 +987,7 @@ footer {
     }
 
     #logosecundaria {
-        width: 80px; /* Reduz o tamanho da logo em telas muito pequenas */
+        width: 100%; /* Reduz o tamanho da logo em telas muito pequenas */
         height: 80px;
     }
 
