@@ -1000,6 +1000,7 @@ footer {
 
     .text-header, .text-header2 {
         font-size: 14px;
+        display: flex;
     }
 
     .description h2 {
