@@ -894,21 +894,18 @@ footer {
 
 
 
-
-/* Estilos gerais para dispositivos móveis (max-width: 700px) */
 @media (max-width: 768px) {
-
     #logoprincipal {
-        height: 100px; /* Reduz a altura do cabeçalho em telas menores */
+        height: 100px;
     }
 
     #logosecundaria {
-        width: 100px; /* Reduz o tamanho da logo em telas menores */
+        width: 100px;
         height: 100px;
     }
 
     .menu-item {
-        flex: 1 1 98%; /* Faz com que cada item ocupe a largura total */
+        flex: 1 1 98%;
     }
 
     header {
@@ -950,50 +947,33 @@ footer {
 
 
 
-.info-box{
-    margin: 10px;
-    width: 50%;
-    min-width: 380px;
-    padding: 10px;
-    box-sizing: border-box;
-}
 
 
-.info-box h2{
-    font-size: 20px;
-    margin: 0 0 10px;
-}
-
-.info-box p {
-    font-size: 18px;
-}
 
 
-.close-btn {
-    padding: 10px 10px; /* Ajusta o padding do botão */
-    font-size: 18px; /* Ajusta o tamanho da fonte do botão */
-}
+
+
+
+
+
 
 
 
 
 /* Estilos adicionais para dispositivos ainda menores (max-width: 480px) */
 @media (max-width: 480px) {
-
     #logoprincipal {
-        height: 80px; /* Reduz ainda mais a altura do cabeçalho em telas muito pequenas */
+        height: 80px;
     }
 
     #logosecundaria {
-        width: 80px; /* Reduz o tamanho da logo em telas muito pequenas */
+        width: 80px;
         height: 80px;
     }
 
     .blur-background {
-        filter: blur(1px); /* Aumenta o desfoque em telas muito pequenas para melhorar a visibilidade da logo */
+        filter: blur(1px);
     }
-
-
 
     h1, h2 {
         font-size: 18px;
@@ -1012,77 +992,25 @@ footer {
         font-size: 14px;
     }
 
-    .info-pontostrocas {
+    .info-box, .info-pontos, .info-pontostrocas {
         margin: 10px;
-        width: 90%; /* Ajuste a largura para se ajustar bem em telas menores */
+        width: 90%;
         min-width: 280px;
-        padding: 10px; /* Adiciona um pouco de padding para maior conforto */
-        box-sizing: border-box; /* Inclui padding e bordas no cálculo da largura total */
+        padding: 10px;
+        box-sizing: border-box;
     }
 
-    .info-pontostrocas h2 {
-        font-size: 20px; /* Ajusta o tamanho da fonte para melhor leitura em telas menores */
-        margin: 0 0 10px 0;
+    .info-box h2, .info-pontos h2, .info-pontostrocas h2 {
+        font-size: 20px;
+        margin: 0 0 10px;
     }
 
-    .info-pontostrocas p {
-        font-size: 16px; /* Ajusta o tamanho da fonte dos parágrafos */
+    .info-box p, .info-pontos p, .info-pontostrocas p {
+        font-size: 16px;
     }
 
-    .close-btn3 {
-        padding: 5px 10px; /* Ajusta o padding do botão */
-        font-size: 16px; /* Ajusta o tamanho da fonte do botão */
+    .close-btn, .close-btn2, .close-btn3 {
+        padding: 5px 10px;
+        font-size: 16px;
     }
 }
-
-
-.info-pontos{margin: 10px;
-width: 90%;
-min-width: 280px;
-padding: 10px;
-box-sizing: border-box;}
-
-.info-pontos h2 {
-    font-size: 20px;
-    margin: 0 0 10px 0;
-}
-
-.info-pontos p {
-    font-size: 16px;
-}
-
-.close-btn2 {
-    padding: 5px 10px; /* Ajusta o padding do botão */
-    font-size: 16px; /* Ajusta o tamanho da fonte do botão */
-}
-
-
-
-
-.info-box{
-    margin: 10px;
-    width: 90%;
-    min-width: 280px;
-    padding: 10px;
-    box-sizing: border-box;
-}
-
-
-.info-box h2{
-    font-size: 20px;
-    margin: 0 0 10px;
-}
-
-.info-box p {
-    font-size: 16px;
-}
-
-
-.close-btn {
-    padding: 5px 10px; /* Ajusta o padding do botão */
-    font-size: 16px; /* Ajusta o tamanho da fonte do botão */
-}
-
-
-
-
