@@ -896,7 +896,17 @@ footer {
 
 
 /* Estilos gerais para dispositivos móveis (max-width: 700px) */
-@media (max-width: 700px) {
+@media (max-width: 768px) {
+
+    #logoprincipal {
+        height: 100px; /* Reduz a altura do cabeçalho em telas menores */
+    }
+
+    #logosecundaria {
+        width: 100px; /* Reduz o tamanho da logo em telas menores */
+        height: 100px;
+    }
+
     .menu-item {
         flex: 1 1 98%; /* Faz com que cada item ocupe a largura total */
     }
@@ -935,8 +945,28 @@ footer {
     }
 }
 
+
+
+
+
 /* Estilos adicionais para dispositivos ainda menores (max-width: 480px) */
 @media (max-width: 480px) {
+
+    #logoprincipal {
+        height: 80px; /* Reduz ainda mais a altura do cabeçalho em telas muito pequenas */
+    }
+
+    #logosecundaria {
+        width: 80px; /* Reduz o tamanho da logo em telas muito pequenas */
+        height: 80px;
+    }
+
+    .blur-background {
+        filter: blur(1px); /* Aumenta o desfoque em telas muito pequenas para melhorar a visibilidade da logo */
+    }
+
+
+
     h1, h2 {
         font-size: 18px;
     }
@@ -992,6 +1022,12 @@ box-sizing: border-box;}
     font-size: 16px;
 }
 
+.close-btn2 {
+    padding: 5px 10px; /* Ajusta o padding do botão */
+    font-size: 16px; /* Ajusta o tamanho da fonte do botão */
+}
+
+
 
 
 .info-box{
@@ -1010,6 +1046,12 @@ box-sizing: border-box;}
 
 .info-box p {
     font-size: 16px;
+}
+
+
+.close-btn {
+    padding: 5px 10px; /* Ajusta o padding do botão */
+    font-size: 16px; /* Ajusta o tamanho da fonte do botão */
 }
 
 
