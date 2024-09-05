@@ -977,8 +977,8 @@ footer {
 }
 
 
-.info-pontos{margin: 0px;
-width: 90%;
+.info-pontos{margin: 10px;
+width: 50%;
 min-width: 280px;
 padding: 10px;
 box-sizing: border-box;}
