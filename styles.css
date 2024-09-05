@@ -949,6 +949,33 @@ footer {
 
 
 
+
+.info-box{
+    margin: 10px;
+    width: 50%;
+    min-width: 380px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+
+.info-box h2{
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.info-box p {
+    font-size: 18px;
+}
+
+
+.close-btn {
+    padding: 10px 10px; /* Ajusta o padding do botão */
+    font-size: 18px; /* Ajusta o tamanho da fonte do botão */
+}
+
+
+
 /* Estilos adicionais para dispositivos ainda menores (max-width: 480px) */
 @media (max-width: 480px) {
 
