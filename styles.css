@@ -978,7 +978,7 @@ footer {
 
 
 .info-pontos{margin: 10px;
-width: 50%;
+width: 90%;
 min-width: 280px;
 padding: 10px;
 box-sizing: border-box;}
@@ -993,3 +993,21 @@ box-sizing: border-box;}
 }
 
 
+
+.info-box{
+    margin: 10px;
+    width: 90%;
+    min-width: 280px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+
+.info-box h2{
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.info-box p {
+    font-size: 16px;
+}
