@@ -1003,8 +1003,28 @@ footer {
 
     .text-header, .text-header2 {
         font-size: 14px;
-        display: flex;
     }
+
+    .text-header{
+        display: flex;
+        font-size: 14px;
+
+    }
+
+
+
+    .label{
+        display: flex;
+        font-size: 14px;
+
+    }
+
+    .delivery-time{
+        display: flex;
+        font-size: 14px;
+
+    }
+
 
     .description h2 {
         font-size: 20px;
