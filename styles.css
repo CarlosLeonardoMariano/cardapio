@@ -895,12 +895,14 @@ footer {
 
 
 
+/* Estilos gerais para dispositivos móveis (max-width: 700px) */
 @media (max-width: 700px) {
     .menu-item {
         flex: 1 1 98%; /* Faz com que cada item ocupe a largura total */
     }
 
-    header{margin-bottom: 15em
+    header {
+        margin-bottom: 15em;
     }
 
     #categorias {
@@ -910,7 +912,6 @@ footer {
     #categorias li {
         margin: 15px 0;
     }
-
 
     .text-header, .text-header2 {
         flex-direction: column;
@@ -928,12 +929,13 @@ footer {
         padding: 8px 16px;
         font-size: 14px;
     }
-    
+
     .menu-item img {
         max-width: 100%;
     }
 }
 
+/* Estilos adicionais para dispositivos ainda menores (max-width: 480px) */
 @media (max-width: 480px) {
     h1, h2 {
         font-size: 18px;
@@ -950,11 +952,28 @@ footer {
     .description p {
         font-size: 14px;
     }
-}
-.info-pontostrocas{
-    margin: 10px;
-    width: 95%;
-    min-width: 280px;
 
+    .info-pontostrocas {
+        margin: 10px;
+        width: 90%; /* Ajuste a largura para se ajustar bem em telas menores */
+        min-width: 280px;
+        padding: 10px; /* Adiciona um pouco de padding para maior conforto */
+        box-sizing: border-box; /* Inclui padding e bordas no cálculo da largura total */
+    }
+
+    .info-pontostrocas h2 {
+        font-size: 20px; /* Ajusta o tamanho da fonte para melhor leitura em telas menores */
+        margin: 0 0 10px 0;
+    }
+
+    .info-pontostrocas p {
+        font-size: 16px; /* Ajusta o tamanho da fonte dos parágrafos */
+    }
+
+    .close-btn3 {
+        padding: 5px 10px; /* Ajusta o padding do botão */
+        font-size: 16px; /* Ajusta o tamanho da fonte do botão */
+    }
 }
+
 
