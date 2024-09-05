@@ -977,3 +977,19 @@ footer {
 }
 
 
+.info-pontos{margin: 10px;
+width: 90%;
+min-width: 280px;
+padding: 10px;
+box-sizing: border-box;}
+
+.info-pontos h2 {
+    font-size: 20px;
+    margin: 0 0 10px 0;
+}
+
+.info-pontos p {
+    font-size: 16px;
+}
+
+
