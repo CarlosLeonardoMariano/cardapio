@@ -112,7 +112,8 @@ margin-top: 1px;
     gap: 10px; /* Espaço entre os itens */
     background-color: white;
     padding: 10px;
-    
+    min-width: 280px;
+    max-width: 100%
 }
 
 .text-header2{ text-align: center;
@@ -121,6 +122,8 @@ margin-top: 1px;
     align-items: center; /* Alinha o conteúdo verticalmente */
     gap: 10px; /* Espaço entre os itens */
     background-color: white;
+    min-width: 280px;
+    max-width: 100%
     
 }
 
@@ -144,7 +147,9 @@ border-radius: 5px;
 background-color: rgb(34, 201, 34);
 color: white;
 font-weight: bolder;
-cursor: pointer;}
+cursor: pointer;
+
+}
 
 
 .pontos{border: none;
@@ -168,6 +173,8 @@ font-size: 15px;}
     backdrop-filter: blur(1px);
     display: none; /* Oculta o overlay por padrão */
     z-index: 1000; /* Garante que o overlay esteja acima de outros elementos */
+    min-width: 280px;
+    max-width: 100%
 }
 
 
