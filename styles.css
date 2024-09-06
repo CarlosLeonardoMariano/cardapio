@@ -980,7 +980,7 @@ footer {
         border-radius: 50%;
         object-fit: cover;
         position: absolute; /* Usa absolute para garantir que o logo esteja posicionado corretamente */
-        top: 50%; /* Centraliza verticalmente */
+        top: 70%; /* Centraliza verticalmente */
         left: 50%; /* Centraliza horizontalmente */
         transform: translate(-50%, -50%); /* Ajusta a posição do logo */
         z-index: 1; /* Garante que a logo esteja acima do fundo desfocado */
