@@ -43,17 +43,16 @@ margin-top: 10px;
 }
 
 
+#logoprincipal{ 
+    position: relative;
+    width: 100%;
+    height: 150px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; /* Centraliza a imagem */
 
-    #logoprincipal {
-        position: relative;
-        width: 100%;
-        height: 150px;
-        background-repeat: no-repeat;
-        background-size: cover; /* Garante que a imagem cubra o elemento */
-        background-position: center center; /* Centraliza a imagem */
-        background-image: url('capa1.png'); /* Verifique se o caminho está correto */
-    
-    
+    background-image: url('capa1.png'); /* Certifique-se de que o caminho da imagem está correto */
+
 }
 
 .blur-background {
@@ -61,7 +60,7 @@ margin-top: 10px;
     width: 100%;
     height: 100%;
     background-image: url('capa1.png'); /* Certifique-se de que o caminho da imagem está correto */
-    background-position: 60% 24%; /* Ajuste conforme necessário */
+    background-position: center; /* Ajuste conforme necessário */
     background-size: cover;
     filter: blur(0.5px); /* Aplica o desfoque */
 }
@@ -73,8 +72,11 @@ margin-top: 10px;
     height: 150px;
     border-radius: 50%;
     object-fit: cover;
-    position: relative;
-    z-index: 1; /* Garante que a logo secundária esteja acima do fundo desfocado */
+    position: absolute; /* Usar absolute para posicionar a logo corretamente */
+    top: 50%; /* Centraliza verticalmente */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta a posição da logo */
+    z-index: 1; /* Garante que a logo esteja acima do fundo desfocado */
 }
 
 
@@ -902,11 +904,6 @@ footer {
         height: 100px;
     }
 
-
-    .blur-background {
-        filter: blur(0.5px); /* Ajusta o desfoque conforme necessário */
-    }
-
     #logosecundaria {
         width: 100px;
         height: 100px;
@@ -972,10 +969,12 @@ footer {
 @media (max-width: 480px) {
     #logoprincipal {
         height: 80px;
-        margin: 0px;
     }
 
-    
+    #logosecundaria {
+        width: 80px;
+        height: 80px;
+    }
 
     .blur-background {
         filter: blur(1px);
