@@ -51,7 +51,7 @@ margin-top: 1px;
 
 
 #logoprincipal {
-    width: 120%;
+    width: 100%;
     height: 160px; /* Ajuste a altura conforme necessário */
     background-repeat: no-repeat;
     background-size: cover;
@@ -60,7 +60,7 @@ margin-top: 1px;
 }
 
 .blur-background {
-    width: 120%;
+    width: 100%;
     height: 160px;
     background-image: url('capa1.png');
     background-position: 40% 23%;
@@ -112,8 +112,7 @@ margin-top: 1px;
     gap: 10px; /* Espaço entre os itens */
     background-color: white;
     padding: 10px;
-    min-width: 350px;
-    max-width: 120%
+
 }
 
 .text-header2{ text-align: center;
@@ -122,8 +121,7 @@ margin-top: 1px;
     align-items: center; /* Alinha o conteúdo verticalmente */
     gap: 10px; /* Espaço entre os itens */
     background-color: white;
-    min-width: 350px;
-    max-width: 120%
+  
     
 }
 
@@ -173,8 +171,6 @@ font-size: 15px;}
     backdrop-filter: blur(1px);
     display: none; /* Oculta o overlay por padrão */
     z-index: 1000; /* Garante que o overlay esteja acima de outros elementos */
-    min-width: 280px;
-    max-width: 100%
 }
 
 
