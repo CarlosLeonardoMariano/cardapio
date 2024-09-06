@@ -972,19 +972,9 @@ footer {
 @media (max-width: 480px) {
     #logoprincipal {
         height: 80px;
+        margin: 0px;
     }
 
-    #logosecundaria {
-        width: 80px; /* Ajusta o tamanho do logo para dispositivos móveis */
-        height: 80px;
-        border-radius: 50%;
-        object-fit: cover;
-        position: absolute; /* Usa absolute para garantir que o logo esteja posicionado corretamente */
-        top: 70%; /* Centraliza verticalmente */
-        left: 50%; /* Centraliza horizontalmente */
-        transform: translate(-50%, -50%); /* Ajusta a posição do logo */
-        z-index: 1; /* Garante que a logo esteja acima do fundo desfocado */
-    }
     
 
     .blur-background {
