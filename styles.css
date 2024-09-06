@@ -43,14 +43,17 @@ margin-top: 10px;
 }
 
 
-#logoprincipal{ 
-    position: relative;
-    width: 100%;
-    height: 150px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url('capa1.png'); /* Certifique-se de que o caminho da imagem está correto */
 
+    #logoprincipal {
+        position: relative;
+        width: 100%;
+        height: 150px;
+        background-repeat: no-repeat;
+        background-size: cover; /* Garante que a imagem cubra o elemento */
+        background-position: center center; /* Centraliza a imagem */
+        background-image: url('capa1.png'); /* Verifique se o caminho está correto */
+    
+    
 }
 
 .blur-background {
@@ -899,6 +902,11 @@ footer {
         height: 100px;
     }
 
+
+    .blur-background {
+        filter: blur(0.5px); /* Ajusta o desfoque conforme necessário */
+    }
+
     #logosecundaria {
         width: 100px;
         height: 100px;
@@ -967,10 +975,17 @@ footer {
     }
 
     #logosecundaria {
-        width: 80px;
+        width: 80px; /* Ajusta o tamanho do logo para dispositivos móveis */
         height: 80px;
-        background-size: cover;
+        border-radius: 50%;
+        object-fit: cover;
+        position: absolute; /* Usa absolute para garantir que o logo esteja posicionado corretamente */
+        top: 50%; /* Centraliza verticalmente */
+        left: 50%; /* Centraliza horizontalmente */
+        transform: translate(-50%, -50%); /* Ajusta a posição do logo */
+        z-index: 1; /* Garante que a logo esteja acima do fundo desfocado */
     }
+    
 
     .blur-background {
         filter: blur(1px);
